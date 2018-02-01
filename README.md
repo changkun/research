@@ -8,7 +8,7 @@ This repository contains all my speech or talk slides.
 - 2017-12-07: [Convolutional Neural Network: from Zero to Hero, section **ResNet**, **DenseNet** and **CapsNet**](201712/cnn.pdf)
 - 2017-02-10: [Understanding _Generalization in Deep Learning_](201802/generalization.pdf)
 
-## Incoming
+## Upcoming
 
 - 2018-02-22: [Mobile Affective Inference: Methods, Applications and Challenges]
 - 2018-03-xx: [On the Development of Qualified User Experience Tool]
