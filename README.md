@@ -17,5 +17,3 @@ This repository contains all my speech or talk slides.
 ## License
 
 CC-BY-NC-ND 4.0 &copy; Changkun Ou
-
-[201802/generalization.pdf]:
