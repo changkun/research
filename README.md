@@ -10,13 +10,13 @@ This repository contains all my speech or talk slides.
 - 2017-02-10: [Understanding _Generalization in Deep Learning_](201802/generalization.pdf)
 - 2018-02-26: [Mobile Affective Inference: Methods, Applications and Challenges](201802/emotions.pdf)
 - 2018-03-13: [Capsule Network with Routing Mechanism: Part 2 Matrix Capsules](./201803/capsnet2.pdf)
+- 2018-05-24: [On the Development of Qualified UX Metric](./201805/qux.pdf)
 
 ## Upcoming
 
 - 2018-04-xx: [Capsule Network with EM Routing Mechanism Part 3: The Math of EM Routing]
 - 2018-04-xx: [Understanding _Analytical Learning Theory_]
 - 2018-04-xx: [On the Review of _Statistical Learning Theory_: Part 1 Learning Machines]
-- 2018-05-xx: [On the Development of Qualified User Experience Tool]
 
 ## License
 
