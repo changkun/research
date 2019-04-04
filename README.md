@@ -12,10 +12,10 @@ This repository contains all my speech or talk slides.
 - 2018-03-13: [Capsule Network with Routing Mechanism: Part 2 Matrix Capsules](./201803/capsnet2.pdf)
 - 2018-05-24: [On the Development of Qualified UX Metric](./201805/qux.pdf)
 - 2019-01-08: [Understanding and Predicting Web Clickstreams](./201901/master.pdf)
+- 2019-04-03: [A Glimpse to the Advances of Mesh Representation Learning](./201904/mesh.pdf)
 
 ## Upcoming
 
-- 2019-04-05: [A Glimpse to the Recent Advances of Mesh Representation Learning]
 - ~~2018-04-xx: [Capsule Network with EM Routing Mechanism Part 3: The Math of EM Routing]~~
 - ~~2018-04-xx: [Understanding _Analytical Learning Theory_]~~
 - ~~2018-04-xx: [On the Review of _Statistical Learning Theory_: Part 1 Learning Machines]~~
