@@ -2,8 +2,6 @@
 
 This repository contains all my speech or talk slides.
 
-## Finished
-
 - 2017-09-12: [我在德国学习『人机交互』的一年](201709/swun.pdf)
 - 2017-12-07: [Convolutional Neural Network: from Zero to Hero, section **ResNet**, **DenseNet** and **CapsNet**](201712/cnn.pdf)
 - 2017-12-17: [Capsule Network with Routing Mechanism: Part 1 Dynamic Routing](./201712/capsnet1.pdf)
@@ -13,12 +11,9 @@ This repository contains all my speech or talk slides.
 - 2018-05-24: [On the Development of Qualified UX Metric](./201805/qux.pdf)
 - 2019-01-08: [Understanding and Predicting Web Clickstreams](./201901/master.pdf)
 - 2019-04-03: [A Glimpse to the Advances of Mesh Representation Learning](./201904/mesh.pdf)
-
-## Upcoming
-
-- ~~2018-04-xx: [Capsule Network with EM Routing Mechanism Part 3: The Math of EM Routing]~~
-- ~~2018-04-xx: [Understanding _Analytical Learning Theory_]~~
-- ~~2018-04-xx: [On the Review of _Statistical Learning Theory_: Part 1 Learning Machines]~~
+- 2019-07-08: [Buchungstermin schneller im Kreisverwaltungsreferat](./201907/kvr.pdf)
+- 2019-08-22: [channel/select 源码分析](./201908/channel.pdf)
+- 2019-09-12: [Real-world Go Concurrency Bugs](./201909/bug.pdf)
 
 ## License
 
