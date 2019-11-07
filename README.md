@@ -17,6 +17,7 @@ This repository contains all my speech or talk slides.
 - 2019-08-22: 🇨🇳 [channel/select 源码分析](./201908/channel.pdf)
 - 2019-09-12: 🇨🇳 [Real-world Go Concurrency Bugs](./201909/bug.pdf)
 - 2019-10-09: 🇬🇧 [Simplicity is Complicated: On the Balance of Performance and Knobs](./201910/knobs.pdf)
+- 2019-10-09: 🇨🇳 [Understanding Communicating Sequential Processes](./201911/csp.pdf)
 
 ## License
 
