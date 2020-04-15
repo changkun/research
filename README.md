@@ -4,6 +4,8 @@ This repository contains all my speech or talk slides.
 
 | Date | Language | Topic |
 |:----:|:--------:|:------|
+| 2020-03-26 | 🇨🇳 | [对 Go 程序进行可靠的性能测试](./202003/gobench.pdf) |
+| 2020-03-18 | 🇨🇳 | [Go 2 Generics? A (P)review](./202003/go2generics.pdf) |
 | 2020-01-02 | 🇨🇳 | [time.Timer 源码分析](./202001/timer.pdf) |
 | 2019-12-19 | 🇬🇧 | [Online Multimedia: Technological Outlook](./201912/omm9.pdf) |
 | 2019-11-10 | 🇨🇳 | [Understanding Communicating Sequential Processes](./201911/csp.pdf) |
