@@ -4,6 +4,14 @@ This repository contains all my speech or talk slides.
 
 | Date | Language | Topic |
 |:----:|:--------:|:------|
+| 2020-06-29 | 🇬🇧 | Computer Graphics: Final Review [Document](./202006/cg1-review-doc.pdf), [Slides](./202006/cg1-tutorial-8-review.pdf), [Mind Map](./202006/cg1-tutorial-appendix-mindmap.pdf)|
+| 2020-06-22 | 🇬🇧 | Computer Graphics: Illumination [Assignments](./202006/cg1-assignment-7-illumination.pdf), [Slides](./202006/cg1-tutorial-7-illumination.pdf)|
+| 2020-06-15 | 🇬🇧 | Computer Graphics: Materials [Assignments](./202006/cg1-assignment-6-material.pdf), [Slides](./202006/cg1-tutorial-6-material.pdf)|
+| 2020-06-08 | 🇬🇧 | Computer Graphics: Rasterization [Assignments](./202006/cg1-assignment-5-raster.pdf), [Slides](./202006/cg1-tutorial-5-raster.pdf)|
+| 2020-05-25 | 🇬🇧 | Computer Graphics: Camera [Assignments](./202005/cg1-assignment-4-camera.pdf), [Slides](./202005/cg1-tutorial-4-camera.pdf)|
+| 2020-05-18 | 🇬🇧 | Computer Graphics: Geometry [Assignments](./202005/cg1-assignment-3-geometry.pdf), [Slides](./202005/cg1-tutorial-3-geometry.pdf)|
+| 2020-05-11 | 🇬🇧 | Computer Graphics: Transformations [Assignments](./202005/cg1-assignment-2-transform.pdf), [Slides](./202005/cg1-tutorial-2-transform.pdf)|
+| 2020-05-04 | 🇬🇧 | Computer Graphics: Survival Mathematics [Assignments](./202005/cg1-assignment-1-math.pdf), [Slides](./202005/cg1-tutorial-1-math.pdf)|
 | 2020-03-26 | 🇨🇳 | [对 Go 程序进行可靠的性能测试](./202003/gobench.pdf) |
 | 2020-03-18 | 🇨🇳 | [Go 2 Generics? A (P)review](./202003/go2generics.pdf) |
 | 2020-01-02 | 🇨🇳 | [time.Timer 源码分析](./202001/timer.pdf) |
