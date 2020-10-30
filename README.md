@@ -3,7 +3,8 @@
 This repository contains all my speech or talk slides.
 
 | Date | Language | Topic |
-|:----:|:--------:|:------|
+|:----|:--------:|:------|
+| 2020-10-07 | 🇬🇧 | [A Future of Polygon Reduction](./202010/polyred4us.pdf) |
 | 2020-06-29 | 🇬🇧 | Computer Graphics: Final Review [Document](./202006/cg1-review-doc.pdf), [Slides](./202006/cg1-tutorial-8-review.pdf), [Mind Map](./202006/cg1-tutorial-appendix-mindmap.pdf)|
 | 2020-06-22 | 🇬🇧 | Computer Graphics: Illumination [Assignments](./202006/cg1-assignment-7-illumination.pdf), [Slides](./202006/cg1-tutorial-7-illumination.pdf)|
 | 2020-06-15 | 🇬🇧 | Computer Graphics: Materials [Assignments](./202006/cg1-assignment-6-material.pdf), [Slides](./202006/cg1-tutorial-6-material.pdf)|
