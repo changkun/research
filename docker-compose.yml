@@ -1,0 +1,16 @@
+# Copyright 2020 Changkun Ou. All rights reserved.
+
+version: '3'
+
+services:
+  talks:
+    build: .
+    restart: always
+    image: talks:latest
+    environment:
+      - "TALKS_ADDR=talks:80"
+    networks:
+      - traefik_proxy
+networks:
+  traefik_proxy:
+    external: true
