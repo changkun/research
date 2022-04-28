@@ -14,7 +14,7 @@ import (
 	"time"
 )
 
-//go:embed 20*/*
+//go:embed 20* cg1 gp
 var static embed.FS
 
 func main() {
