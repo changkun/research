@@ -1,6 +1,6 @@
 # Copyright 2020 Changkun Ou. All rights reserved.
 
-NAME=talks
+NAME=research
 VERSION = $(shell git describe --always --tags)
 all:
 	go build

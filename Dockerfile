@@ -1,6 +1,6 @@
 # Copyright 2020 Changkun Ou. All rights reserved.
 
 FROM alpine
-COPY talks /app/talks
+COPY research /app/research
 EXPOSE 80
-CMD ["/app/talks"]
+CMD ["/app/research"]

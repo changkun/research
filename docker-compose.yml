@@ -3,12 +3,12 @@
 version: '3'
 
 services:
-  talks:
+  research:
     build: .
     restart: always
-    image: talks:latest
+    image: research:latest
     environment:
-      - "TALKS_ADDR=talks:80"
+      - "RESEARCH_ADDR=research:80"
     networks:
       - traefik_proxy
 networks:
