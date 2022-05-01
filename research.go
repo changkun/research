@@ -14,7 +14,7 @@ import (
 	"time"
 )
 
-//go:embed talks cg1 gp papers
+//go:embed talks papers teach thesis
 var static embed.FS
 
 func main() {
