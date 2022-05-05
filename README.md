@@ -2,11 +2,11 @@
 
 This repository contains all my research related materials (papers/talks/etc).
 
-- 🇬🇧 **Changkun Ou**. April 04, 2022. The Decision Maker's Dilemma: or how I stopped struggling with possible choices. https://changkun.de/research/talks/202204/dilemma.pdf
+- 🇬🇧 **Changkun Ou**. April 04, 2022. _The Decision Maker's Dilemma: or how I stopped struggling with possible choices_. https://changkun.de/research/talks/202204/dilemma.pdf (unreleased)
 - 🇨🇳 **Changkun Ou**. Mar 30, 2022. _Go 1.18 中的泛型_. https://changkun.de/research/talks/202203/generics118.pdf
 - 🇨🇳 **Changkun Ou**. Mar 21, 2022. _什么是理性的社区讨论?_ https://changkun.de/research/talks/202203/rational.pdf
-- 🇬🇧 **Changkun Ou**. Oct 15, 2021. _Can we compute the free-will?_ https://changkun.de/research/talks/202110/polyred6fold.pdf
-- 🇬🇧 **Changkun Ou**. Mar 15, 2021. _Delicate Dance: Preferences in Interactive Meshing_. https://changkun.de/research/talks/202103/polyred5star.pdf
+- 🇬🇧 **Changkun Ou**. Oct 15, 2021. _Can we compute the free-will?_ https://changkun.de/research/talks/202110/polyred6fold.pdf (unreleased)
+- 🇬🇧 **Changkun Ou**. Mar 15, 2021. _Delicate Dance: Preferences in Interactive Meshing_. https://changkun.de/research/talks/202103/polyred5star.pdf (unreleased)
 - 🇬🇧 **Changkun Ou**. Oct 7, 2020. _A Future of Polygon Reduction_. https://changkun.de/research/talks/202010/polyred4us.pdf
 - 🇨🇳 **Changkun Ou**. Mar 26, 2020 _对 Go 程序进行可靠的性能测试_. https://changkun.de/research/talks/202003/gobench.pdf
 - 🇨🇳 **Changkun Ou**. Mar 18, 2020. _Go 2 Generics? A (P)review_. https://changkun.de/research/talks/202003/go2generics.pdf
