@@ -3,8 +3,12 @@
 package main
 
 import (
+	"bytes"
 	"context"
 	"embed"
+	"fmt"
+	"io"
+	"io/fs"
 	"log"
 	"net"
 	"net/http"
@@ -14,15 +18,42 @@ import (
 	"time"
 )
 
-//go:embed talks papers teach thesis
-var static embed.FS
+var (
+	//go:embed talks papers teach theses
+	static embed.FS
+)
 
 func main() {
 	l := log.New(os.Stdout, "", log.LstdFlags|log.Lshortfile|log.Lmsgprefix)
 	logger := logging(l)
 
 	r := http.NewServeMux()
-	r.Handle("/", http.StripPrefix("/research/", http.FileServer(http.FS(static))))
+	r.Handle("/", http.StripPrefix("/research/", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		if strings.HasPrefix(r.URL.Path, "talks") {
+			found := false
+			fs.WalkDir(static, "talks", func(path string, d fs.DirEntry, err error) error {
+				if d.IsDir() || !strings.HasPrefix(path, "talks") || !strings.HasSuffix(path, ".pdf") {
+					return nil
+				}
+
+				names := strings.Split(path, "/")
+				if len(names) > 2 {
+					try := fmt.Sprintf("%s/%s", names[0], names[len(names)-1])
+					if strings.Compare(r.URL.Path, try) == 0 {
+						b, _ := fs.ReadFile(static, path)
+						io.Copy(w, bytes.NewReader(b))
+						found = true
+					}
+				}
+				return nil
+			})
+			if found {
+				return
+			}
+		}
+
+		http.FileServer(http.FS(static)).ServeHTTP(w, r)
+	})))
 
 	addr := os.Getenv("RESEARCH_ADDR")
 	if len(addr) == 0 {
