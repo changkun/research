@@ -13,13 +13,13 @@ This repository contains all my research related materials (papers/talks/etc).
 - 🇨🇳 **Changkun Ou**. Jan 2, 2020. _time.Timer 源码分析_. https://changkun.de/research/talks/202001/timer.pdf
 - 🇬🇧 **Changkun Ou**. Dec 19, 2019. _Online Multimedia: Technological Outlook_. https://changkun.de/research/talks/201912/omm9.pdf
 - 🇨🇳 **Changkun Ou**. Nov 10, 2019. _Understanding Communicating Sequential Processes_. https://changkun.de/research/talks/201911/csp.pdf
-- 🇬🇧 **Changkun Ou**. Oct 9, 2019. _Simplicity is Complicated: On the Balance of Performance and Knobs_. https://changkun.de/research/talks/201910/knobs.pdf)
+- 🇬🇧 **Changkun Ou**. Oct 9, 2019. _Simplicity is Complicated: On the Balance of Performance and Knobs_. https://changkun.de/research/talks/201910/polyred2what.pdf)
 - 🇨🇳 **Changkun Ou**. Sep 12, 2019. _Real-world Go Concurrency Bugs_. https://changkun.de/research/talks/201909/bug.pdf
 - 🇨🇳 **Changkun Ou**. Aug 22, 2019. _channel/select 源码分析_. https://changkun.de/research/talks/201908/channel.pdf
 - 🇩🇪 **Changkun Ou**. Jul 8, 2019. _Buchungstermin schneller im Kreisverwaltungsreferat_. https://changkun.de/research/talks/201907/kvr.pdf
 - 🇨🇳 **Changkun O**u. May 27, 2019. _给研究生的学术建议_. https://changkun.de/research/talks/201905/swun.pdf
 - 🇬🇧 **Changkun Ou**. May 26, 2019. _Identifying Malicious Players in GWAP-based Disaster Monitoring Crowdsourcing System_. https://changkun.de/research/talks/201905/gwap.pdf
-- 🇬🇧 **Changkun Ou**. Apr 3, 2019. _A Glimpse to the Advances of Mesh Representation Learning_. https://changkun.de/research/talks/201904/mesh.pdf
+- 🇬🇧 **Changkun Ou**. Apr 3, 2019. _A Glimpse to the Advances of Mesh Representation Learning_. https://changkun.de/research/talks/201904/polyred1step.pdf
 - 🇬🇧 **Changkun Ou**. Jan 8, 2019. _Understanding and Predicting Web Clickstreams_. https://changkun.de/research/talks/201901/master.pdf
 - 🇬🇧 **Changkun Ou**. May 24, 2018. _On the Development of Qualified UX Metric_. https://changkun.de/research/talks/201805/qux.pdf
 - 🇬🇧 **Changkun Ou**. Mar 13, 2018. _Capsule Network with Routing Mechanism: Part 2 Matrix Capsules_. https://changkun.de/research/talks/201803/capsnet2.pdf
