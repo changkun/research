@@ -1,14 +1,16 @@
 # Research
 
-[Personal Website](https://changkun.de) | [GitHub](https://github.com/changkun) | [OSF](https://osf.io/wyekm) | [ORCID](https://orcid.org/0000-0002-4595-7485) | [LMU Munich](https://www.medien.ifi.lmu.de/team/changkun.ou/)
+<!--begin-->
 
 Changkun Ou is a Ph.D. candidate in computer science at LMU Munich. His research focuses on intelligent human-in-the-loop systems and develops machine learning algorithms to exploit human preferential behavior, then support their decision-making process for the greater good. In context, he utilizes efficient and robust engineering practices to explore system design trade-offs that can bring actual impact to real users.
 
+He is also enthusiastic about the open source movement and active in the Go community. For more open-source work, see [GitHub profile](https://github.com/changkun).
+
 ## Publications
 
-- 🇬🇧 Dennis Dietz, Carl Oechsner, **Changkun Ou**, Francesco Chiossi, Fabio Sarto, Sven Mayer, Andreas Butz. 2022. _Walk This Beam: Impact of Different Balance Assistance Strategies and Height Exposure on Performance and Physiological Arousal in VR_. In 28th ACM Symposium on Virtual Reality Software and Technology (VRST ’22). ACM, New York, NY, USA, Article 32, 12 pages. 🏆 **Best Paper Award**. [doi:10.1145/3562939.3567818](https://doi.org/10.1145/3562939.3567818). [PDF](https://changkun.de/paper/slackline.pdf). [GitHub](https://github.com/mimuc/walk-this-beam)
-- 🇬🇧 **Changkun Ou**, Daniel Buschek, Sven Mayer, Andreas Butz. 2022. _The Human in the Infinite Loop: A Case Study on Revealing and Explaining Human-AI Interaction Loop Failures_. In Mensch und Computer 2022 (MuC’22). ACM, New York, NY, USA, 11 pages. 🏆 **Honorable Mention Award**. [doi:10.1145/3543758.3543761](https://doi.org/10.1145/3543758.3543761). [PDF](https://changkun.de/paper/infloop.pdf). [GitHub](https://github.com/changkun/infloop)
-- 🇬🇧 Julius Girbig, **Changkun Ou**, and Sylvia Rothe. 2022. _Generative 3D Animation Pipelines: Automating Facial Retargeting Workflows_. In Workshop on “AI-Generated Characters: Putting Deepfakes to Good Use” of CHI ’22: ACM CHI Conference on Human Factors in Computing Systems. New Orleans, LA, USA, 4 pages. [doi:10.48550/arXiv.2204.12553](https://doi.org/10.48550/arXiv.2204.12553). [PDF](https://changkun.de/paper/deepfake.pdf)
+- 🇬🇧 Dennis Dietz, Carl Oechsner, **Changkun Ou**, Francesco Chiossi, Fabio Sarto, Sven Mayer, Andreas Butz. 2022. _Walk This Beam: Impact of Different Balance Assistance Strategies and Height Exposure on Performance and Physiological Arousal in VR_. In 28th ACM Symposium on Virtual Reality Software and Technology (VRST '22). ACM, New York, NY, USA, Article 32, 12 pages. 🏆 **Best Paper Award**. [doi:10.1145/3562939.3567818](https://doi.org/10.1145/3562939.3567818). [PDF](https://changkun.de/paper/slackline.pdf). [GitHub](https://github.com/mimuc/walk-this-beam)
+- 🇬🇧 **Changkun Ou**, Daniel Buschek, Sven Mayer, Andreas Butz. 2022. _The Human in the Infinite Loop: A Case Study on Revealing and Explaining Human-AI Interaction Loop Failures_. In Mensch und Computer 2022 (MuC'22). ACM, New York, NY, USA, 11 pages. 🏆 **Honorable Mention Award**. [doi:10.1145/3543758.3543761](https://doi.org/10.1145/3543758.3543761). [PDF](https://changkun.de/paper/infloop.pdf). [GitHub](https://github.com/changkun/infloop)
+- 🇬🇧 Julius Girbig, **Changkun Ou**, and Sylvia Rothe. 2022. _Generative 3D Animation Pipelines: Automating Facial Retargeting Workflows_. In Workshop on “AI-Generated Characters: Putting Deepfakes to Good Use” of CHI '22: ACM CHI Conference on Human Factors in Computing Systems. New Orleans, LA, USA, 4 pages. [doi:10.48550/arXiv.2204.12553](https://doi.org/10.48550/arXiv.2204.12553). [PDF](https://changkun.de/paper/deepfake.pdf)
 - 🇬🇧 **Changkun Ou**. 2022. _(Generic) Functional Options Pattern_. In the golang.design Initiative Research. 9 pages. [PDF](https://golang.design/research/generic-option.pdf)
 - 🇨🇳 Quancheng Rao, **Changkun Ou**. 2022. The Handbook of Go Programmer Interview. China Machine Press. ISBN: 9787111702429. [PDF](https://golang.design/go-questions/)
 - 🇬🇧 **Changkun Ou**, Daniel Buschek, Malin Eiband, Andreas Butz. 2021. _Modeling Web Browsing Behavior across Tabs and Websites with Tracking and Prediction on the Client Side_. arXiv preprint. 10 pages. [doi:10.48550/arXiv.2103.04694](https://doi.org/10.48550/arXiv.2103.04694). [PDF](https://arxiv.org/abs/2103.04694).
@@ -17,12 +19,12 @@ Changkun Ou is a Ph.D. candidate in computer science at LMU Munich. His research
 - 🇬🇧 **Changkun Ou**. 2021. _Scheduling Function Calls with Zero Allocation_. In the golang.design Initiative Research. 16 pages. [PDF](https://golang.design/research/zero-alloc-call-sched.pdf)
 - 🇬🇧 **Changkun Ou**. 2020. _Pointers Might Not be Ideal as Arguments_. In the golang.design Initiative Research. 10 pages. [PDF](https://golang.design/research/pointer-params.pdf)
 - 🇬🇧 **Changkun Ou**. 2020. _Eliminating A Source of Measurement Errors in Benchmarks_. In the golang.design Initiative Research. 10 pages. [PDF](https://golang.design/research/bench-time.pdf)
-- 🇬🇧 Kai Holländer, Luca Schellenberg, **Changkun Ou**, and Andreas Butz. 2020. _All Fun and Games: Obtaining Critical Pedestrian Behavior Data from an Online Simulation_. In Extended Abstracts of the 2020 CHI Conference on Human Factors in Computing Systems (CHI EA ’20). ACM, New York, NY, USA, 9 pages. doi:10.1145/3334480.3382797. [PDF](https://changkun.de/paper/fungame.pdf)
-- 🇬🇧 **Changkun Ou**, Yifei Zhan, Yaxi Chen. 2019. _Identifying Malicious Players in GWAP-based Disaster Monitoring Crowdsourcing System_. In the 2nd International Conference on Artificial Intelligence and Big Data (ICAIBD). IEEE. New York, NY, USA, 10 pages. 🏆 **Best Paper Award**. doi:10.1109/ICAIBD.2019.8836972. [PDF](https://changkun.de/paper/gwap.pdf)
+- 🇬🇧 Kai Holländer, Luca Schellenberg, **Changkun Ou**, and Andreas Butz. 2020. _All Fun and Games: Obtaining Critical Pedestrian Behavior Data from an Online Simulation_. In Extended Abstracts of the 2020 CHI Conference on Human Factors in Computing Systems (CHI EA '20). ACM, New York, NY, USA, 9 pages. [doi:10.1145/3334480.3382797](https://doi.org/10.1145/3334480.3382797). [PDF](https://changkun.de/paper/fungame.pdf)
+- 🇬🇧 **Changkun Ou**, Yifei Zhan, Yaxi Chen. 2019. _Identifying Malicious Players in GWAP-based Disaster Monitoring Crowdsourcing System_. In the 2nd International Conference on Artificial Intelligence and Big Data (ICAIBD). IEEE. New York, NY, USA, 10 pages. 🏆 **Best Paper Award**. [doi:10.1109/ICAIBD.2019.8836972](https://doi.org/10.1109/ICAIBD.2019.8836972). [PDF](https://changkun.de/paper/gwap.pdf)
 - 🇨🇳 🇬🇧 **Changkun Ou**. 2021. _Modern C++ Tutorial: C++11/14/17/20 On the Fly_. In Github. 89 pages. [Website](https://changkun.de/modern-cpp).
-- 🇬🇧 Jingyi Li, **Changkun Ou**, Yong Ma. 2019. _Cultivation and Incentivization of HCI Research and Community in China: Taxonomy and Social Endorsements_. In Workshop on “HCI in China: Research Agenda, Education Curriculum, Industry Partnership, and Communities Building” of the 2020 CHI Conference on Human Factors in Computing Systems (CHI EA ’19). Glasgow, UK, 7 pages. [PDF](https://changkun.de/paper/china.pdf)
+- 🇬🇧 Jingyi Li, **Changkun Ou**, Yong Ma. 2019. _Cultivation and Incentivization of HCI Research and Community in China: Taxonomy and Social Endorsements_. In Workshop on “HCI in China: Research Agenda, Education Curriculum, Industry Partnership, and Communities Building” of the 2020 CHI Conference on Human Factors in Computing Systems (CHI EA '19). Glasgow, UK, 7 pages. [PDF](https://changkun.de/paper/china.pdf)
 - 🇬🇧 **Changkun Ou**. 2018. _An Introduction to Recent Mobile Affective Inference Techniques: Methods, Applications and Challenges_. In Advanced Seminar Media Computer Science, LMU Munich. 9 pages. [PDF](https://changkun.de/paper/emotions.pdf)
-- 🇬🇧 Matthias Geiger, **Changkun Ou**, Cedric Quintes. 2017. _WatchOut: A Road Safety Extension for Pedestrians on a Public Windshield Display_. arXiv:1905.05390. 5 pages. [PDF](https://changkun.de/paper/watchout.pdf)
+- 🇬🇧 Matthias Geiger, **Changkun Ou**, Cedric Quintes. 2017. _WatchOut: A Road Safety Extension for Pedestrians on a Public Windshield Display_. [doi:10.48550/arXiv.1905.05390](https://doi.org/10.48550/arXiv.1905.05390). 5 pages. [PDF](https://changkun.de/paper/watchout.pdf)
 - 🇨🇳 Yaxi Chen, **Changkun Ou**. 2016. _Combining Touch Biometrics and Motion Sensors for Hand Posture Recognition and User Authentication System_. In Journal of Southwest University for Nationalities (Nature Science Edition). 7 pages. [PDF](https://changkun.de/paper/touchbio.pdf)
 - 🇨🇳 Yaxi Chen, **Changkun Ou**, Zhaoyang Guo. 2014. _Space interactions based on monocular vision and simple gestures_. In Journal of Southwest University for Nationalities (Natural Science Edition). 6 pages. [PDF](https://changkun.de/paper/monocam.pdf)
 - 🇬🇧 **Changkun Ou**, Mu Huang, Mengxin Shi, Jiang Cheng. 2014. _A Study in Keep-Right-Except-To-Pass Rule_. In the Mathematical Contest in Modeling (MCM). 35 pages. 🏆 **Meritorious Winner**. [PDF](https://changkun.de/paper/keepright.pdf)
@@ -48,7 +50,7 @@ Changkun Ou is a Ph.D. candidate in computer science at LMU Munich. His research
 - 🇬🇧 **Changkun Ou**. Oct 9, 2019. _Simplicity is Complicated: On the Balance of Performance and Knobs_. [PDF](https://changkun.de/talk/polyred2what.pdf)
 - 🇨🇳 **Changkun Ou**. Sep 12, 2019. _Real-world Go Concurrency Bugs_. [PDF](https://changkun.de/talk/bug.pdf)
 - 🇨🇳 **Changkun Ou**. Aug 22, 2019. _channel/select 源码分析_. [PDF](https://changkun.de/talk/channel.pdf)
-- 🇩🇪 **Changkun Ou**. Jul 8, 2019. _Buchungstermin schneller im Kreisverwaltungsreferat_. [PDF](https://changkun.de/talk/kvr.pdf
+- 🇩🇪 **Changkun Ou**. Jul 8, 2019. _Buchungstermin schneller im Kreisverwaltungsreferat_. [PDF](https://changkun.de/talk/kvr.pdf)
 - 🇨🇳 **Changkun O**u. May 27, 2019. _给研究生的学术建议_. [PDF](https://changkun.de/talk/swunadvice.pdf)
 - 🇬🇧 **Changkun Ou**. May 26, 2019. _Identifying Malicious Players in GWAP-based Disaster Monitoring Crowdsourcing System_. [PDF](https://changkun.de/talk/gwap.pdf)
 - 🇬🇧 **Changkun Ou**. Apr 3, 2019. _A Glimpse to the Advances of Mesh Representation Learning_. [PDF](https://changkun.de/talk/polyred1step.pdf)
@@ -64,8 +66,42 @@ Changkun Ou is a Ph.D. candidate in computer science at LMU Munich. His research
 
 ## Teaching
 
-- 🇬🇧 Changkun Ou. [2020](https://changkun.de/teach/cg1/2020), [2021](https://changkun.de/teach/cg1/2021), [2022](https://changkun.de/teach/cg1/2022/). [Computer Graphics Tutorial](http://mimuc.de/cg1). LMU Munich.
-- 🇬🇧 Changkun Ou. [2020](https://changkun.de/teach/gp/2020), [2021](https://changkun.de/teach/gp/2020). [Practical Geometry Processing](https://mimuc.de/gp). LMU Munich.
+- 🇬🇧 Changkun Ou. [2020](https://changkun.de/teach/cg1/2020), [2021](https://changkun.de/teach/cg1/2021), [2022](https://changkun.de/teach/cg1/2022/). [Computer Graphics Tutorial](http://mimuc.de/cg1). Assistant. LMU Munich.
+- 🇬🇧 Changkun Ou. [2020](https://changkun.de/teach/gp/2020), [2021](https://changkun.de/teach/gp/2020). [Practical Geometry Processing](https://mimuc.de/gp). Instructor. LMU Munich.
+- 🇬🇧 Changkun Ou. 2022. Lecture Information Visualization. Assistant. LMU Munich.
+- 🇬🇧 Changkun Ou. 2020. Seminar Advances in Computer Graphics. Assistant. LMU Munich.
+- 🇬🇧 Changkun Ou. 2019. Seminar Advanced Media Informatics. Assistant. LMU Munich.
+- 🇬🇧 Changkun Ou. 2018. Lecture Deep Learning and Artificial Intelligence. Tutor. LMU Munich.
+- 🇬🇧 Changkun Ou. 2018. Lecture Machine Learning. Tutor. LMU Munich.
+
+## Awards
+
+- 2022: Best Paper Award, VRST 2022
+- 2022: Honorable Mention Award, MuC 2022
+- 2020: Papers with Special Recognitions for Outstanding Reviews, CHI2020
+- 2019: Best Paper Award, ICAIBD2019
+- 2016: Excellent Bachelor Thesis
+- 2014: MCM Meritorious Winner
+
+## Scientific Activities
+
+### Reviewer
+
+- CHI (2020, 2021, 2022, 2023)
+- INTERACT (2021)
+
+### Student Volunteer
+
+- CHI (2020)
+- Smart Graphics (2015)
+
+### Attending
+
+- AMP Winter School 2022 on Philosophy of Science (Oberstdorf, Germany) [Website](https://amp.ubicomp.net/events/winter-school-2022/)
+- AMP Winter School 2020 on How Artificial Intelligence Impacts User-Centered Innovation Processes (Oberstdorf, Germany) [Website](https://amp.ubicomp.net/events/winter-school-2020/)
+- CIX Summer School 2019 on Computational Interaction (New York, USA) [Website](https://computationalhci2019.com/)
+
+<!--end-->
 
 ## License
 

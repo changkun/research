@@ -1,12 +1,12 @@
-// Copyright 2020 Changkun Ou. All rights reserved.
+// Copyright 2022 Changkun Ou. All rights reserved.
 
 package main
 
 import (
 	"bytes"
 	"context"
-	"embed"
 	"fmt"
+	"html/template"
 	"io"
 	"io/fs"
 	"log"
@@ -14,14 +14,75 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
+	"path/filepath"
 	"strings"
 	"time"
+
+	"github.com/yuin/goldmark"
+	"github.com/yuin/goldmark/extension"
+	"github.com/yuin/goldmark/parser"
 )
 
 var (
-	//go:embed talks papers teach theses
-	static embed.FS
+	BuildTime string
+	BuildHash string
+	md        goldmark.Markdown = goldmark.New(
+		goldmark.WithExtensions(extension.Table),
+		goldmark.WithParserOptions(
+			parser.WithAutoHeadingID(),
+		),
+		goldmark.WithRendererOptions(),
+	)
 )
+
+func convertMD(filename string) (bytes.Buffer, error) {
+	d, err := os.ReadFile(filename)
+	if err != nil {
+		return bytes.Buffer{}, fmt.Errorf("cannot read README.md, err: %w", err)
+	}
+	d = []byte(strings.Split(strings.Split(string(d), "<!--begin-->")[1], "<!--end-->")[0])
+
+	var b bytes.Buffer
+	err = md.Convert(d, &b)
+	if err != nil {
+		log.Fatalf("Convert: cannot convert README from markdown to html, err: %v", err)
+	}
+	return b, nil
+}
+
+type research struct {
+	// Navigation template.HTML
+	Content     template.HTML
+	CurrentYear string
+	BuildTime   string
+	BuildHash   string
+}
+
+func renderIndex(w http.ResponseWriter) {
+	b, _ := os.ReadFile("assets/index.html")
+	tmpl := template.Must(template.New("main").Parse(string(b)))
+
+	iconPDF := `<i class="fa-solid fa-file-pdf"></i>`
+	content, err := convertMD("README.md")
+	if err != nil {
+		log.Println(err)
+		w.WriteHeader(http.StatusNotFound)
+		w.Write([]byte(err.Error()))
+		return
+	}
+	out := strings.Replace(content.String(), ">PDF</a>", ">"+iconPDF+"</a>", -1)
+
+	iconGitHub := `<i class="fa-brands fa-github"></i>`
+	out = strings.Replace(out, ">GitHub</a>", ">"+iconGitHub+"</a>", -1)
+
+	t, _ := time.Parse("2006-01-02", BuildTime)
+	tmpl.Execute(w, research{
+		Content:     template.HTML(out),
+		CurrentYear: time.Now().Format("2006"),
+		BuildTime:   t.Format("Jan 02, 2006"),
+		BuildHash:   BuildHash,
+	})
+}
 
 func main() {
 	l := log.New(os.Stdout, "", log.LstdFlags|log.Lshortfile|log.Lmsgprefix)
@@ -29,9 +90,16 @@ func main() {
 
 	r := http.NewServeMux()
 	r.Handle("/", http.StripPrefix("/research/", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		// route / and /index.html
+		if r.URL.Path == "" || r.URL.Path == "/index.html" {
+			renderIndex(w)
+			return
+		}
+
+		// route /talks/**/*.pdf to /talks/*.pdf
 		if strings.HasPrefix(r.URL.Path, "talks") {
 			found := false
-			fs.WalkDir(static, "talks", func(path string, d fs.DirEntry, err error) error {
+			filepath.WalkDir("talks", func(path string, d fs.DirEntry, err error) error {
 				if d.IsDir() || !strings.HasPrefix(path, "talks") || !strings.HasSuffix(path, ".pdf") {
 					return nil
 				}
@@ -39,8 +107,8 @@ func main() {
 				names := strings.Split(path, "/")
 				if len(names) > 2 {
 					try := fmt.Sprintf("%s/%s", names[0], names[len(names)-1])
-					if strings.Compare(r.URL.Path, try) == 0 {
-						b, _ := fs.ReadFile(static, path)
+					if r.URL.Path == try {
+						b, _ := os.ReadFile(path)
 						io.Copy(w, bytes.NewReader(b))
 						found = true
 					}
@@ -52,7 +120,33 @@ func main() {
 			}
 		}
 
-		http.FileServer(http.FS(static)).ServeHTTP(w, r)
+		log.Println("access: ", r.URL.Path)
+
+		// route /papers/* /teach/* /theses/*
+		if strings.HasPrefix(r.URL.Path, "papers") ||
+			strings.HasPrefix(r.URL.Path, "teach") ||
+			strings.HasPrefix(r.URL.Path, "theses") ||
+			strings.HasPrefix(r.URL.Path, "assets") {
+			b, err := os.ReadFile(r.URL.Path)
+			if err != nil {
+				w.WriteHeader(http.StatusNotFound)
+				w.Write([]byte(fmt.Sprintf("failed to find file: %v", r.URL.Path)))
+				return
+			}
+
+			ext := filepath.Ext(r.URL.Path)
+			switch ext {
+			case ".css":
+				w.Header().Add("Content-Type", "text/css")
+			case ".js":
+				w.Header().Add("Content-Type", "text/javascript")
+			}
+			io.Copy(w, bytes.NewReader(b))
+			return
+		}
+
+		w.WriteHeader(http.StatusNotFound)
+		w.Write([]byte("unsupported access!"))
 	})))
 
 	addr := os.Getenv("RESEARCH_ADDR")

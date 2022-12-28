@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+    background-color: #333;
+}
+body {
+    font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+a {
+    color: #267CB9;
+    text-decoration: none;
+}
+.main {
+    background-color: #eee;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 4px;
+    max-width: 970px;
+}
+.icons {
+    text-align: end;
+}
+.icons a {
+    margin-right: 5px;
+}
+.photo {
+    float: right;
+    margin-left: 20px;
+    border-radius: 4px;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li {
+    padding: 0 10px 5px;
+    list-style-type: square;
+    list-style-position: inside;
+}
+li:hover {
+    background-color: #ddd;
+    border-radius: 2px;
+}
+footer {
+    margin: 30px 0 30px;
+    text-align: center;
+    color: #aaa;
+}

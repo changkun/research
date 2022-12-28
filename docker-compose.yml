@@ -4,9 +4,10 @@ version: '3'
 
 services:
   research:
-    build: .
     restart: always
     image: research:latest
+    volumes:
+      - .:/app
     environment:
       - "RESEARCH_ADDR=research:80"
     networks:
