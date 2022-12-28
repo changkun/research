@@ -39,6 +39,22 @@ a {
     -moz-user-drag: none;
     -o-user-drag: none;
 }
+@media screen and (max-width: 480px) {
+    .main {
+		margin-top: 0;
+		border-radius: 0;
+        padding: 20px 10px 10px;
+    }
+    .photo {
+        float: right;
+        margin-left: 0;
+        margin-bottom: 10px;
+		width: 150px;
+    }
+	.icons {
+		text-align: right;
+	}
+}
 ul {
     margin: 0;
     padding: 0;

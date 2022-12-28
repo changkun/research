@@ -92,7 +92,11 @@ func main() {
 	r.Handle("/", http.StripPrefix("/research", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		log.Println("accessing: ", r.URL.Path)
 		// route / and /index.html
-		if r.URL.Path == "" || r.URL.Path == "/" || r.URL.Path == "/index.html" {
+		if r.URL.Path == "" {
+			http.Redirect(w, r, "/research/", http.StatusTemporaryRedirect)
+			return
+		}
+		if r.URL.Path == "/" || r.URL.Path == "/index.html" {
 			renderIndex(w)
 			return
 		}
