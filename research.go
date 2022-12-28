@@ -89,12 +89,14 @@ func main() {
 	logger := logging(l)
 
 	r := http.NewServeMux()
-	r.Handle("/", http.StripPrefix("/research/", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	r.Handle("/", http.StripPrefix("/research", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		log.Println("accessing: ", r.URL.Path)
 		// route / and /index.html
-		if r.URL.Path == "" || r.URL.Path == "/index.html" {
+		if r.URL.Path == "" || r.URL.Path == "/" || r.URL.Path == "/index.html" {
 			renderIndex(w)
 			return
 		}
+		r.URL.Path = strings.TrimPrefix(r.URL.Path, "/")
 
 		// route /talks/**/*.pdf to /talks/*.pdf
 		if strings.HasPrefix(r.URL.Path, "talks") {
