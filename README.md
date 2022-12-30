@@ -9,7 +9,7 @@ He is also enthusiastic about the open source movement and active in the Go comm
 ## Publications
 
 - 🇬🇧 Dennis Dietz, Carl Oechsner, **Changkun Ou**, Francesco Chiossi, Fabio Sarto, Sven Mayer, Andreas Butz. 2022. _Walk This Beam: Impact of Different Balance Assistance Strategies and Height Exposure on Performance and Physiological Arousal in VR_. In 28th ACM Symposium on Virtual Reality Software and Technology (VRST '22). ACM, New York, NY, USA, Article 32, 12 pages. 🏆 **Best Paper Award**. [doi:10.1145/3562939.3567818](https://doi.org/10.1145/3562939.3567818). [PDF](https://changkun.de/paper/slackline.pdf). [GitHub](https://github.com/mimuc/walk-this-beam)
-- 🇬🇧 **Changkun Ou**, Daniel Buschek, Sven Mayer, Andreas Butz. 2022. _The Human in the Infinite Loop: A Case Study on Revealing and Explaining Human-AI Interaction Loop Failures_. In Mensch und Computer 2022 (MuC'22). ACM, New York, NY, USA, 11 pages. 🏆 **Honorable Mention Award**. [doi:10.1145/3543758.3543761](https://doi.org/10.1145/3543758.3543761). [PDF](https://changkun.de/paper/infloop.pdf). [GitHub](https://github.com/changkun/infloop)
+- 🇬🇧 **Changkun Ou**, Daniel Buschek, Sven Mayer, Andreas Butz. 2022. _The Human in the Infinite Loop: A Case Study on Revealing and Explaining Human-AI Interaction Loop Failures_. In Mensch und Computer 2022 (MuC'22). ACM, New York, NY, USA, 11 pages. 🏆 **[Honorable Mention Award](https://changkun.de/paper/infloop-cert.pdf)**. [doi:10.1145/3543758.3543761](https://doi.org/10.1145/3543758.3543761). [PDF](https://changkun.de/paper/infloop.pdf). [GitHub](https://github.com/changkun/infloop)
 - 🇬🇧 Julius Girbig, **Changkun Ou**, and Sylvia Rothe. 2022. _Generative 3D Animation Pipelines: Automating Facial Retargeting Workflows_. In Workshop on “AI-Generated Characters: Putting Deepfakes to Good Use” of CHI '22: ACM CHI Conference on Human Factors in Computing Systems. New Orleans, LA, USA, 4 pages. [doi:10.48550/arXiv.2204.12553](https://doi.org/10.48550/arXiv.2204.12553). [PDF](https://changkun.de/paper/deepfake.pdf)
 - 🇬🇧 **Changkun Ou**. 2022. _(Generic) Functional Options Pattern_. In the golang.design Initiative Research. 9 pages. [PDF](https://golang.design/research/generic-option.pdf)
 - 🇨🇳 Quancheng Rao, **Changkun Ou**. 2022. The Handbook of Go Programmer Interview. China Machine Press. ISBN: 9787111702429. [PDF](https://golang.design/go-questions/)
@@ -89,6 +89,8 @@ He is also enthusiastic about the open source movement and active in the Go comm
 
 - CHI (2020, 2021, 2022, 2023)
 - INTERACT (2021)
+- ICMI (2022)
+- IMWUT (2022)
 
 ### Student Volunteer
 
