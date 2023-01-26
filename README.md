@@ -78,6 +78,7 @@ He is also enthusiastic about the open source movement and active in the Go comm
 
 ## Awards
 
+- 2023: [Gary Marsden Travel Award](https://sigchi.org/awards/gary-marsden-travel-awards/), ACM
 - 2022: Best Paper Award, VRST 2022
 - 2022: Honorable Mention Award, MuC 2022
 - 2020: Papers with Special Recognitions for Outstanding Reviews, CHI2020
