@@ -30,6 +30,7 @@ a {
     margin-right: 5px;
 }
 .photo {
+    width: 300px;
     float: right;
     margin-left: 20px;
     border-radius: 4px;
