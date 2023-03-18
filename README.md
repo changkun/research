@@ -30,10 +30,11 @@ He is also enthusiastic about the open source movement and active in the Go comm
 - 🇬🇧 Matthias Geiger, **Changkun Ou**, Cedric Quintes. 2017. _WatchOut: A Road Safety Extension for Pedestrians on a Public Windshield Display_. [doi:10.48550/arXiv.1905.05390](https://doi.org/10.48550/arXiv.1905.05390). 5 pages. [PDF](https://changkun.de/paper/watchout.pdf)
 - 🇨🇳 Yaxi Chen, **Changkun Ou**. 2016. _Combining Touch Biometrics and Motion Sensors for Hand Posture Recognition and User Authentication System_. In Journal of Southwest University for Nationalities (Nature Science Edition). 7 pages. [PDF](https://changkun.de/paper/touchbio.pdf)
 - 🇨🇳 Yaxi Chen, **Changkun Ou**, Zhaoyang Guo. 2014. _Space interactions based on monocular vision and simple gestures_. In Journal of Southwest University for Nationalities (Natural Science Edition). 6 pages. [PDF](https://changkun.de/paper/monocam.pdf)
-- 🇬🇧 **Changkun Ou**, Mu Huang, Mengxin Shi, Jiang Cheng. 2014. _A Study in Keep-Right-Except-To-Pass Rule_. In the Mathematical Contest in Modeling (MCM). 35 pages. 🏆 **[Meritorious Winner](https://changkun.de/paper/../../../papers/keepright-cert.pdf)**. [PDF](https://changkun.de/paper/keepright.pdf)
+- 🇬🇧 **Changkun Ou**, Mu Huang, Mengxin Shi, Jiang Cheng. 2014. _A Study in Keep-Right-Except-To-Pass Rule_. In the Mathematical Contest in Modeling (MCM). 35 pages. 🏆 **[Meritorious Winner](https://changkun.de/paper/keepright-cert.pdf)**. [PDF](https://changkun.de/paper/keepright.pdf)
 
 ## Theses
 
+- 🇬🇧 **Changkun Ou**. 2023. _The Intelligence in the Loop: Empirical Explorations and Reflections_. In the Institute of Computer Science. LMU Munich. 109 pages. **Ph.D. Dissertation**. PDF(soon)
 - 🇬🇧 **Changkun Ou**. 2019. _Understanding and Predicting Web Browsing Behavior_. In the Institute of Computer Science. LMU Munich. 70 pages. **Master Thesis**. [PDF](https://changkun.de/thesis/master.pdf)
 - 🇬🇧 🇨🇳 **Changkun Ou**. 2016. _Designing Alternative Contact-free Control Modalities for Smart Watches_. In the Institute of Computer Science. Southwest University of Nationalities. 47 pages. Bachelor Thesis. 🏆 **Excellent Bachelor Thesis**. [PDF](https://changkun.de/thesis/bachelor.pdf)
 
