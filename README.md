@@ -40,6 +40,8 @@ He is also enthusiastic about the open source movement and active in the Go comm
 
 ## Presentations
 
+- 🇬🇧 **Changkun Ou**. Mar 29, 2023. The Impact of Expertise In the Loop
+for Exploring Machine Rationality. [PDF](https://changkun.de/talk/expertise.pdf)
 - 🇬🇧 **Changkun Ou**. Sep 6, 2022. The Human in the _Infinite Loop_: A Case Study on Revealing and Explaining Human-AI Interaction Loop Failures. [PDF](https://changkun.de/talk/infloop.pdf)
 - 🇬🇧 **Changkun Ou**. April 04, 2022. _The Decision Maker's Dilemma: or how I stopped struggling with possible choices_. [PDF](https://changkun.de/talk/dilemma.pdf)
 - 🇨🇳 **Changkun Ou**. Mar 30, 2022. _Go 1.18 中的泛型_. [PDF](https://changkun.de/talk/generics118.pdf)
