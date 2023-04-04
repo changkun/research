@@ -2,7 +2,7 @@
 
 <!--begin-->
 
-Changkun Ou is a Ph.D. candidate in computer science at LMU Munich. His research focuses on intelligent human-in-the-loop systems and develops machine learning algorithms to exploit human preferential behavior, then support their decision-making process for the greater good. In context, he utilizes efficient and robust engineering practices to explore system design trade-offs that can bring actual impact to real users.
+Dr. Ou received a Ph.D. in computer science at LMU Munich on April 3rd, 2023. His research focuses on intelligent human-in-the-loop systems and develops machine learning algorithms to exploit human preferential behavior, then support their decision-making process for the greater good. In context, he utilizes efficient and robust engineering practices to explore system design trade-offs that can bring actual impact to real users.
 
 He is also enthusiastic about the open source movement and active in the Go community. For more open-source work, see [GitHub profile](https://github.com/changkun).
 
@@ -40,8 +40,8 @@ He is also enthusiastic about the open source movement and active in the Go comm
 
 ## Presentations
 
-- 🇬🇧 **Changkun Ou**. Mar 29, 2023. The Impact of Expertise In the Loop
-for Exploring Machine Rationality. [PDF](https://changkun.de/talk/expertise.pdf)
+- 🇬🇧 **Changkun Ou**. Apr 3, 2023. The _Intelligence_ In the Loop: Empirical Explorations and Reflections. [PDF(soon)]
+- 🇬🇧 **Changkun Ou**. Mar 29, 2023. The Impact of Expertise In the Loop for Exploring Machine Rationality. [PDF](https://changkun.de/talk/expertise.pdf)
 - 🇬🇧 **Changkun Ou**. Sep 6, 2022. The Human in the _Infinite Loop_: A Case Study on Revealing and Explaining Human-AI Interaction Loop Failures. [PDF](https://changkun.de/talk/infloop.pdf)
 - 🇬🇧 **Changkun Ou**. April 04, 2022. _The Decision Maker's Dilemma: or how I stopped struggling with possible choices_. [PDF](https://changkun.de/talk/dilemma.pdf)
 - 🇨🇳 **Changkun Ou**. Mar 30, 2022. _Go 1.18 中的泛型_. [PDF](https://changkun.de/talk/generics118.pdf)
