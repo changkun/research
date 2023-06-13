@@ -40,6 +40,7 @@ He is also enthusiastic about the open source movement and active in the Go comm
 
 ## Presentations
 
+- 🇬🇧 **Changkun Ou**. Jun 10, 2023. Go on GPU. [PDF](https://changkun.de/talk/gogpu.pdf)
 - 🇬🇧 **Changkun Ou**. Apr 3, 2023. The _Intelligence_ In the Loop: Empirical Explorations and Reflections. [PDF(soon)]
 - 🇬🇧 **Changkun Ou**. Mar 29, 2023. The Impact of Expertise In the Loop for Exploring Machine Rationality. [PDF](https://changkun.de/talk/expertise.pdf)
 - 🇬🇧 **Changkun Ou**. Sep 6, 2022. The Human in the _Infinite Loop_: A Case Study on Revealing and Explaining Human-AI Interaction Loop Failures. [PDF](https://changkun.de/talk/infloop.pdf)
