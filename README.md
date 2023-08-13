@@ -98,8 +98,9 @@ He is also enthusiastic about the open source movement and active in the Go comm
 
 - CHI (2020, 2021, 2022, 2023)
 - INTERACT (2021)
-- ICMI (2022)
+- ICMI (2022, 2023)
 - IMWUT (2022)
+- MobileHCI (2023)
 
 ### Student Volunteer
 
