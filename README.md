@@ -94,9 +94,13 @@ He is also enthusiastic about the open source movement and active in the Go comm
 
 ## Scientific Activities
 
+### Associate Chair
+
+- [CHI (2024) Computational Interaction Subcommittee](https://chi2024.acm.org/subcommittees/selecting-a-subcommittee/#computational_interaction)
+
 ### Reviewer
 
-- CHI (2020, 2021, 2022, 2023)
+- CHI (2020, 2021, 2022, 2023, 2024)
 - INTERACT (2021)
 - ICMI (2022, 2023)
 - IMWUT (2022)
