@@ -2,9 +2,11 @@
 
 <!--begin-->
 
-Dr. Ou received a Ph.D. in computer science at LMU Munich on April 3rd, 2023. His research focuses on intelligent human-in-the-loop systems and develops machine learning algorithms to exploit human preferential behavior, then support their decision-making process for the greater good. In context, he utilizes efficient and robust engineering practices to explore system design trade-offs that can bring actual impact to real users.
+Dr. Ou received a Ph.D. in computer science at LMU Munich on April 3rd, 2023. His research
+explores design tradeoffs on intelligent human-in-the-loop systems and develops machine learning
+algorithms to support user decision-making processes. In context, he employees efficient and robust engineering practices to design and implement systems that deliver actual impact to real users.
 
-He is also enthusiastic about the open source movement and active in the Go community. For more open-source work, see [GitHub profile](https://github.com/changkun).
+He is enthusiastic about the open source movement and active in the Go community. For more open-source work, see [GitHub profile](https://github.com/changkun).
 
 ## Publications
 
