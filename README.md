@@ -42,6 +42,7 @@ He is enthusiastic about the open source movement and active in the Go community
 
 ## Presentations
 
+- 🇬🇧 **Changkun Ou**. Nov 30, 2023. A Glimpse to Profile-guided Optimization in Go Early practices of bringing PGO to production. [PDF](https://changkun.de/talk/gopgo.pdf)
 - 🇬🇧 **Changkun Ou**. Jun 10, 2023. Go on GPU. [PDF](https://changkun.de/talk/gogpu.pdf)
 - 🇬🇧 **Changkun Ou**. Apr 3, 2023. The _Intelligence_ In the Loop: Empirical Explorations and Reflections. [PDF(soon)]
 - 🇬🇧 **Changkun Ou**. Mar 29, 2023. The Impact of Expertise In the Loop for Exploring Machine Rationality. [PDF](https://changkun.de/talk/expertise.pdf)
