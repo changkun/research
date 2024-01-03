@@ -46,23 +46,23 @@ He is enthusiastic about the open source movement and active in the Go community
 
 - 🇬🇧 **Changkun Ou**. Nov 30, 2023. A Glimpse to Profile-guided Optimization in Go: Early practices of bringing PGO to production. SIXT Portugal Golang Meetup. [PDF](https://changkun.de/talk/gopgo.pdf)
 - 🇬🇧 **Changkun Ou**. Jun 10, 2023. Go on GPU. GopherChina 2023. [PDF](https://changkun.de/talk/gogpu.pdf)
-- 🇬🇧 **Changkun Ou**. Apr 3, 2023. The _Intelligence_ In the Loop: Empirical Explorations and Reflections. PhD Defense. [PDF](https://changkun.de/talk/phd.pdf)
+- 🇬🇧 **Changkun Ou**. Apr 3, 2023. The _Intelligence_ In the Loop: Empirical Explorations and Reflections. PhD Defense. [PDF](https://changkun.de/talk/phd.pdf). [YouTube](https://youtu.be/dG8lu7uAyEY).
 - 🇬🇧 **Changkun Ou**. Mar 29, 2023. The Impact of Expertise In the Loop for Exploring Machine Rationality. IUI 2023. [PDF](https://changkun.de/talk/expertise.pdf)
 - 🇬🇧 **Changkun Ou**. Sep 6, 2022. The Human in the _Infinite Loop_: A Case Study on Revealing and Explaining Human-AI Interaction Loop Failures. MuC 2022. [PDF](https://changkun.de/talk/infloop.pdf)
 - 🇬🇧 **Changkun Ou**. April 04, 2022. _The Decision Maker's Dilemma: or how I stopped struggling with possible choices_. IDC 2022 Spring. [PDF](https://changkun.de/talk/dilemma.pdf)
-- 🇨🇳 **Changkun Ou**. Mar 30, 2022. _Go 1.18 中的泛型_. TalkGo Meetup. [PDF](https://changkun.de/talk/generics118.pdf)
+- 🇨🇳 **Changkun Ou**. Mar 30, 2022. _Go 1.18 中的泛型_. TalkGo Meetup. [PDF](https://changkun.de/talk/generics118.pdf). [YouTube](https://youtu.be/ICcss3KKq_0).
 - 🇨🇳 **Changkun Ou**. Mar 21, 2022. _什么是理性的社区讨论?_. TalkGo Meetup. [PDF](https://changkun.de/talk/rational.pdf)
 - 🇬🇧 **Changkun Ou**. Oct 15, 2021. _Can we compute free will?_ IDC 2021 Autumn. [PDF](https://changkun.de/talk/polyred6fold.pdf)
 - 🇬🇧 **Changkun Ou**. Mar 15, 2021. _Delicate Dance: Preferences in Interactive Meshing_. IDC 2021 Spring. [PDF](https://changkun.de/talk/polyred5star.pdf)
 - 🇬🇧 **Changkun Ou**. Oct 7, 2020. _A Future of Polygon Reduction_. IDC 2020 Autumn. [PDF](https://changkun.de/talk/polyred4us.pdf)
-- 🇨🇳 **Changkun Ou**. Mar 26, 2020 _对 Go 程序进行可靠的性能测试_. TalkGo Meetup. [PDF](https://changkun.de/talk/gobench.pdf)
-- 🇨🇳 **Changkun Ou**. Mar 18, 2020. _Go 2 Generics? A (P)review_. TalkGo Meetup. [PDF](https://changkun.de/talk/go2generics.pdf)
-- 🇨🇳 **Changkun Ou**. Jan 2, 2020. _time.Timer 源码分析_. TalkGo Meetup. [PDF](https://changkun.de/talk/timer.pdf)
+- 🇨🇳 **Changkun Ou**. Mar 26, 2020 _对 Go 程序进行可靠的性能测试_. TalkGo Meetup. [PDF](https://changkun.de/talk/gobench.pdf). [YouTube](https://youtu.be/CT6ANYKz2AI)
+- 🇨🇳 **Changkun Ou**. Mar 18, 2020. _Go 2 Generics? A (P)review_. TalkGo Meetup. [PDF](https://changkun.de/talk/go2generics.pdf). [YouTube](https://youtu.be/X3AVumS6I1s).
+- 🇨🇳 **Changkun Ou**. Jan 2, 2020. _time.Timer 源码分析_. TalkGo Meetup. [PDF](https://changkun.de/talk/timer.pdf). [YouTube](https://youtu.be/nZHYc77AdaQ)
 - 🇬🇧 **Changkun Ou**. Dec 19, 2019. _Online Multimedia: Technological Outlook_. Lecture Online Multimedia. [PDF](https://changkun.de/talk/omm9.pdf)
-- 🇨🇳 **Changkun Ou**. Nov 10, 2019. _Understanding Communicating Sequential Processes_. TalkGo Meetup. [PDF](https://changkun.de/talk/csp.pdf)
+- 🇨🇳 **Changkun Ou**. Nov 10, 2019. _Understanding Communicating Sequential Processes_. TalkGo Meetup. [PDF](https://changkun.de/talk/csp.pdf). [YouTube](https://youtu.be/ceTy8orVnLc).
 - 🇬🇧 **Changkun Ou**. Oct 9, 2019. _Simplicity is Complicated: On the Balance of Performance and Knobs_. IDC 2019 Autumn. [PDF](https://changkun.de/talk/polyred2what.pdf)
-- 🇨🇳 **Changkun Ou**. Sep 12, 2019. _Real-world Go Concurrency Bugs_. TalkGo Meetup. [PDF](https://changkun.de/talk/bug.pdf)
-- 🇨🇳 **Changkun Ou**. Aug 22, 2019. _channel/select 源码分析_. TalkGo Meetup. [PDF](https://changkun.de/talk/channel.pdf)
+- 🇨🇳 **Changkun Ou**. Sep 12, 2019. _Real-world Go Concurrency Bugs_. TalkGo Meetup. [PDF](https://changkun.de/talk/bug.pdf). [YouTube](https://youtu.be/ZfkW2RBj3ZY).
+- 🇨🇳 **Changkun Ou**. Aug 22, 2019. _channel/select 源码分析_. TalkGo Meetup. [PDF](https://changkun.de/talk/channel.pdf). [YouTube](https://youtu.be/uhHOOTHUIok).
 - 🇩🇪 **Changkun Ou**. Jul 8, 2019. _Buchungstermin schneller im Kreisverwaltungsreferat_. German Learning Class. [PDF](https://changkun.de/talk/kvr.pdf)
 - 🇨🇳 **Changkun O**u. May 27, 2019. _给研究生的学术建议_. 西南民族大学内部分享. [PDF](https://changkun.de/talk/swunadvice.pdf)
 - 🇬🇧 **Changkun Ou**. May 26, 2019. _Identifying Malicious Players in GWAP-based Disaster Monitoring Crowdsourcing System_. ICAIBD 2019. [PDF](https://changkun.de/talk/gwap.pdf)
@@ -73,7 +73,7 @@ He is enthusiastic about the open source movement and active in the Go community
 - 🇬🇧 **Changkun Ou**. Feb 26, 2018. _Mobile Affective Inference: Methods, Applications and Challenges_. LMU Media Informatics Seminar. [PDF](https://changkun.de/talk/emotions.pdf)
 - 🇬🇧 **Changkun Ou**. Feb 10, 2017. _Understanding Generalization in Deep Learning_. LMU Deep Learning Seminar. [PDF](https://changkun.de/talk/generalization.pdf)
 - 🇬🇧 **Changkun Ou**. Dec 17, 2017. _Capsule Network with Routing Mechanism: Part 1 Dynamic Routing_. LMU Machine Learning Meetup. [PDF](https://changkun.de/talk/capsnet1.pdf)
-- 🇬🇧 Hermann Redich, Patrick Börzel, Isabella Galter, Collin Leiber, and **Changkun Ou**. Dec 07, 2017. _Convolutional Neural Network: from Zero to Hero_. [PDF](https://changkun.de/talk/cnn.pdf)
+- 🇬🇧 Hermann Redich, Patrick Börzel, Isabella Galter, Collin Leiber, and **Changkun Ou**. Dec 07, 2017. _Convolutional Neural Network: from Zero to Hero_. LMU Informatics Deep Learning Seminar. [PDF](https://changkun.de/talk/cnn.pdf)
 - 🇨🇳 **Changkun Ou**. Sep 12, 2017. _我在德国学习人机交互的一年_. 西南民族大学内部分享. [PDF](https://changkun.de/talk/lmuhci.pdf)
 - 🇨🇳 **Changkun Ou**. May 17, 2016. _智能手表的非接触备择交互模式的设计_. 本科毕业答辩. [PDF](https://changkun.de/talk/bachelor.pdf)
 

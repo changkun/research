@@ -75,6 +75,9 @@ func renderIndex(w http.ResponseWriter) {
 	iconGitHub := `<i class="fa-brands fa-github"></i>`
 	out = strings.Replace(out, ">GitHub</a>", ">"+iconGitHub+"</a>", -1)
 
+	iconYouTube := `<i class="fa-brands fa-youtube"></i>`
+	out = strings.Replace(out, ">YouTube</a>", ">"+iconYouTube+"</a>", -1)
+
 	t, _ := time.Parse("2006-01-02", BuildTime)
 	tmpl.Execute(w, research{
 		Content:     template.HTML(out),
