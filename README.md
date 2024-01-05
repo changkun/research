@@ -126,4 +126,6 @@ He is enthusiastic about the open source movement and active in the Go community
 
 ## License
 
-CC-BY-NC-ND 4.0 &copy; [Changkun Ou](https://changkun.de)
+Unauthorized using, copying, modifying and distributing, via any medium is strictly prohibited.
+
+Copyright &copy; 2016 - 2024 [Changkun Ou](https://changkun.de). All rights reserved.
