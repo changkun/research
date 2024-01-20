@@ -62,7 +62,6 @@ func renderIndex(w http.ResponseWriter) {
 	b, _ := os.ReadFile("assets/index.html")
 	tmpl := template.Must(template.New("main").Parse(string(b)))
 
-	iconPDF := `<i class="fa-solid fa-file-pdf"></i>`
 	content, err := convertMD("README.md")
 	if err != nil {
 		log.Println(err)
@@ -70,6 +69,8 @@ func renderIndex(w http.ResponseWriter) {
 		w.Write([]byte(err.Error()))
 		return
 	}
+
+	iconPDF := `<i class="fa-solid fa-file-pdf"></i>`
 	out := strings.Replace(content.String(), ">PDF</a>", ">"+iconPDF+"</a>", -1)
 
 	iconGitHub := `<i class="fa-brands fa-github"></i>`
@@ -77,6 +78,9 @@ func renderIndex(w http.ResponseWriter) {
 
 	iconYouTube := `<i class="fa-brands fa-youtube"></i>`
 	out = strings.Replace(out, ">YouTube</a>", ">"+iconYouTube+"</a>", -1)
+
+	iconOSF := `<i class="ai ai-osf"></i>`
+	out = strings.Replace(out, ">OSF</a>", ">"+iconOSF+"</a>", -1)
 
 	t, _ := time.Parse("2006-01-02", BuildTime)
 	tmpl.Execute(w, research{

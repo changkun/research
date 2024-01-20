@@ -3,10 +3,9 @@
 <!--begin-->
 
 Dr. Ou received a Ph.D. in computer science at LMU Munich on April 3rd, 2023. His research
-explores design tradeoffs on intelligent human-in-the-loop systems and develops machine learning
-algorithms to support user decision-making processes. In context, he employees efficient and robust engineering practices to design and implement systems that deliver actual impact to real users.
+explores design tradeoffs on intelligent human-in-the-loop systems and develops machine-learning algorithms to support user decision-making processes. In context, he employs efficient and robust engineering practices to design and implement systems that deliver actual impact to real users.
 
-He is enthusiastic about the open source movement and active in the Go community. For more open-source work, see [GitHub profile](https://github.com/changkun).
+He is enthusiastic about the open-source movement and active in the Go community. For more open-source work, see [GitHub profile](https://github.com/changkun).
 
 ## Publications
 
@@ -38,7 +37,7 @@ He is enthusiastic about the open source movement and active in the Go community
 
 ## Theses
 
-- 🇬🇧 **Changkun Ou**. 2023. _The Intelligence in the Loop: Empirical Explorations and Reflections_. In the Institute of Computer Science. LMU Munich. 109 pages. **Ph.D. Dissertation**. PDF(soon)
+- 🇬🇧 **Changkun Ou**. 2023. _The Intelligence in the Loop: Empirical Explorations and Reflections_. In the Institute of Computer Science. LMU Munich. 130 pages. **Ph.D. Dissertation**. [doi:10.5282/edoc.32969](https://doi.org/10.5282/edoc.32969). [PDF](https://changkun.de/thesis/phd.pdf). [YouTube](https://youtu.be/dG8lu7uAyEY).
 - 🇬🇧 **Changkun Ou**. 2019. _Understanding and Predicting Web Browsing Behavior_. In the Institute of Computer Science. LMU Munich. 70 pages. **Master Thesis**. [PDF](https://changkun.de/thesis/master.pdf)
 - 🇬🇧 🇨🇳 **Changkun Ou**. 2016. _Designing Alternative Contact-free Control Modalities for Smart Watches_. In the Institute of Computer Science. Southwest University of Nationalities. 47 pages. Bachelor Thesis. 🏆 **Excellent Bachelor Thesis**. [PDF](https://changkun.de/thesis/bachelor.pdf)
 
