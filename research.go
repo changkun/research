@@ -142,7 +142,7 @@ func main() {
 			return
 		}
 		r.URL.Path = strings.TrimPrefix(r.URL.Path, "/")
-		reportUrlstat(r.URL.Path, r.UserAgent())
+		go reportUrlstat(r.URL.Path, r.UserAgent())
 
 		// If this path lead to a folder, serve the entire folder
 		if d, err := os.Stat(r.URL.Path); err == nil && d.IsDir() {
