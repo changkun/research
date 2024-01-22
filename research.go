@@ -91,6 +91,40 @@ func renderIndex(w http.ResponseWriter) {
 	})
 }
 
+func reportUrlstat(path, ua string) {
+	// Report stats to urlstat. Similar to this javascript code in
+	// https://github.com/changkun/urlstat/blob/main/public/client.js
+	//
+	// 	let endpoint = 'https://www.changkun.de/urlstat'
+	// 	const h = new Headers({'urlstat-url': window.location.href,'urlstat-ua': navigator.userAgent})
+	// 	const r = new Request(endpoint, {method: 'GET', headers: h})
+	req, err := http.NewRequest("GET", "https://www.changkun.de/urlstat?report=page+site", nil)
+	if err != nil {
+		log.Println("failed to create request: ", err)
+		return
+	}
+	req.Header.Add("urlstat-url", "https://changkun.de/research/"+path)
+	req.Header.Add("urlstat-ua", ua)
+	log.Println("sending request to urlstat: ", req.URL.String(), req.Header)
+
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		log.Println("failed to send request: ", err)
+		return
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		log.Println("failed to send request: ", resp.Status)
+		return
+	}
+	body := new(bytes.Buffer)
+	body.ReadFrom(resp.Body)
+
+	log.Printf("status: %s, urlstat: %s\n", resp.Status, body.String())
+}
+
 func main() {
 	l := log.New(os.Stdout, "", log.LstdFlags|log.Lshortfile|log.Lmsgprefix)
 	logger := logging(l)
@@ -108,6 +142,13 @@ func main() {
 			return
 		}
 		r.URL.Path = strings.TrimPrefix(r.URL.Path, "/")
+		reportUrlstat(r.URL.Path, r.UserAgent())
+
+		// If this path lead to a folder, serve the entire folder
+		if d, err := os.Stat(r.URL.Path); err == nil && d.IsDir() {
+			http.FileServer(http.Dir(".")).ServeHTTP(w, r)
+			return
+		}
 
 		// route /talks/**/*.pdf to /talks/*.pdf
 		if strings.HasPrefix(r.URL.Path, "talks") {
@@ -140,6 +181,7 @@ func main() {
 			strings.HasPrefix(r.URL.Path, "teach") ||
 			strings.HasPrefix(r.URL.Path, "theses") ||
 			strings.HasPrefix(r.URL.Path, "assets") {
+
 			b, err := os.ReadFile(r.URL.Path)
 			if err != nil {
 				w.WriteHeader(http.StatusNotFound)
