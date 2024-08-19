@@ -9,10 +9,12 @@ He is enthusiastic about the open-source movement and active in the Go community
 
 ## Publications
 
+- 🇬🇧 Francesco Chiossi, U Gruenefeld, Baoshen James Hou, Joshua Newn, **Changkun Ou**, Rulu Liao, Robin Welsch, Sven Mayer. 2024. Understanding the Impact of the Reality-Virtuality Continuum on Visual Search Using Fixation-Related Potentials and Eye Tracking Features. Proc. ACM Hum.-Comput. Interact. 8, MHCI, Article 281 (September 2024), 33 pages [doi:10.1145/3676528](https://doi.org/10.1145/3676528). [PDF](https://changkun.de/paper/chiossi2024understanding.pdf). [OSF](https://osf.io/fncj4/).
+- 🇬🇧 Francesco Chiossi, Ines Trautmannsheimer, **Changkun Ou**, Uwe Gruenefeld, Sven Mayer. 2024. Searching Across Realities: Investigating ERPs and Eye-Tracking Correlates of Visual Search in Mixed Reality. IEEE Transactions on Visualization and Computer Graphics. Forthcoming. [PDF](https://changkun.de/paper/chiossi2024searching.pdf). [OSF](https://osf.io/ar4fs/).
 - 🇬🇧 **Changkun Ou**. Sven Mayer, Daniel Buschek, Andreas Butz. 2024. Rethinking Opinion Measurement Interfaces for Human-in-the-Loop Optimization. In ACM Transactions on Computer-Human Interaction. ACM, New York, NY, USA, 28 pages. SUBMITTED.
-- 🇬🇧 Francesco Chiossi, **Changkun Ou**, Carolina Gerhardt, Felix Putze, Sven Mayer. 2024. Designing and Evaluating an Adaptive Virtual Reality System using EEG Frequencies to Balance Internal and External Attention States. International Journal of Human-Computer Studies. SUBMITTED. [doi:10.48550/arXiv.2311.10447](http://dx.doi.org/10.48550/arXiv.2311.10447). [PDF](https://changkun.de/paper/eeg-intext.pdf). [OSF](https://osf.io/ar4fs/).
+- 🇬🇧 Francesco Chiossi, **Changkun Ou**, Carolina Gerhardt, Felix Putze, Sven Mayer. 2024. Designing and Evaluating an Adaptive Virtual Reality System using EEG Frequencies to Balance Internal and External Attention States. International Journal of Human-Computer Studies. SUBMITTED. [doi:10.48550/arXiv.2311.10447](http://dx.doi.org/10.48550/arXiv.2311.10447). [PDF](https://changkun.de/paper/eeg-intext.pdf). [OSF](https://osf.io/zdpty/).
 - 🇬🇧 Francesco Chiossi, **Changkun Ou**, and Sven Mayer. 2024. Optimizing Visual Complexity for Physiologically-Adaptive VR Systems: Evaluating a Multimodal Dataset using EDA, ECG and EEG Features. In International Conference on Advanced Visual Interfaces 2024, June 03–07, 2024,
-Arenzano, Genoa, Italy. ACM, New York, NY, USA, 9 pages. [doi:10.1145/3656650.3656657](http://doi.org/10.1145/3656650.3656657). [PDF](https://changkun.de/paper/chiossi2024optimizing.pdf).
+Arenzano, Genoa, Italy. ACM, New York, NY, USA, 9 pages. 🏆 **Best Paper Award**. [doi:10.1145/3656650.3656657](http://doi.org/10.1145/3656650.3656657). [PDF](https://changkun.de/paper/chiossi2024optimizing.pdf).
 - 🇬🇧 Rifat Mehreen Amin, Feng Chen, Linda Hirsch, **Changkun Ou**, Tran-Vu La, Andreas Butz. 2024. Integrating Crowd and Machine Learning in an Intelligent Interface: A Case Study of Oil Spill Detection in Satellite Images. In International Conference on Advanced Visual Interfaces 2024, June 03–07, 2024, Arenzano, Genoa, Italy. ACM, New York, NY, USA, 9 pages. [doi:10.1145/3656650.3656680](http://doi.org/10.1145/3656650.3656680). [PDF](https://changkun.de/paper/amin2024avi.pdf).
 - 🇬🇧 **Changkun Ou**, Sven Mayer, Andreas Butz. 2023. _The Impact of Expertise in the Loop for Exploring Machine Rationality_. In 28th International Conference on Intelligent User Interfaces (IUI ’23), March 27–31, 2023, Sydney, NSW, Australia. ACM, New York, NY, USA, 15 pages. [doi:10.1145/3581641.3584040](https://doi.org/10.1145/3581641.3584040). [PDF](https://changkun.de/paper/expertise.pdf). [GitHub](https://github.com/changkun/expertise-loop)
 - 🇬🇧 Francesco Chiossi, **Changkun Ou**, Sven Mayer. 2023. _Exploring Physiological Correlates of Visual Complexity Adaptation: Insights from EDA, ECG, and EEG Data for Adaptation Evaluation in VR Adaptive Systems_. In the 2023 ACM Conference on Human-Computer Interaction (CHI'23) Extended Abstract. ACM, New York, NY, USA, 6 pages. [doi:10.1145/3544549.3585624](https://doi.org/10.1145/3544549.3585624). [PDF](https://changkun.de/paper/eeglbw.pdf). [GitHub](https://github.com/mimuc/vr-adaptation-eeg-evaluation)
@@ -103,11 +105,12 @@ Arenzano, Genoa, Italy. ACM, New York, NY, USA, 9 pages. [doi:10.1145/3656650.36
 
 ### Associate Chair
 
+- [CHI (2025) Computational Interaction Subcommittee](https://chi2025.acm.org/subcommittees/selecting-a-subcommittee/#computational_interaction)
 - [CHI (2024) Computational Interaction Subcommittee](https://chi2024.acm.org/subcommittees/selecting-a-subcommittee/#computational_interaction)
 
 ### Reviewer
 
-- CHI (2020, 2021, 2022, 2023, 2024)
+- CHI (2020, 2021, 2022, 2023, 2024, 2025)
 - INTERACT (2021)
 - ICMI (2022, 2023)
 - IMWUT (2022)
