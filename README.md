@@ -110,6 +110,7 @@ Arenzano, Genoa, Italy. ACM, New York, NY, USA, 9 pages. 🏆 **Best Paper Award
 
 - [CHI (2025) Computational Interaction Subcommittee](https://chi2025.acm.org/subcommittees/selecting-a-subcommittee/#computational_interaction)
 - [CHI (2024) Computational Interaction Subcommittee](https://chi2024.acm.org/subcommittees/selecting-a-subcommittee/#computational_interaction)
+- INTERACT 2025 in Subcommittee "Human-Centred Intelligent Interactive Systems"
 
 ### Reviewer
 
