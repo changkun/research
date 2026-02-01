@@ -2,8 +2,7 @@
 
 <!--begin-->
 
-Dr. Ou received a Ph.D. in computer science at LMU Munich on April 3rd, 2023. His research
-explores design tradeoffs on intelligent human-in-the-loop systems and develops machine-learning algorithms to support user decision-making processes. In context, he employs efficient and robust engineering practices to design and implement systems that deliver actual impact to real users.
+Dr. Ou received a Ph.D. in computer science from LMU Munich on April 3rd, 2023. His research explores intelligent human-in-the-loop systems, focusing on design tradeoffs and machine learning algorithms that support user decision-making (310+ citations, h-index 9). His work spans human-AI interaction, physiologically-adaptive systems in VR/AR, and computational approaches to understanding user behavior and preferences. He bridges theory and practice, applying robust engineering to deliver systems with real-world impact. Currently, he is a Staff Engineer at Sixt SE, leading AI transformation initiatives across enterprise AI platforms.
 
 He is enthusiastic about the open-source movement and active in the Go community. For more open-source work, see [GitHub profile](https://github.com/changkun).
 
