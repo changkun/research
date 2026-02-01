@@ -7,12 +7,12 @@
     --footer-color: #aaa;
 }
 [data-theme="dark"] {
-    --bg-outer: #111;
-    --bg-main: #1a1a1a;
-    --text-color: #e0e0e0;
-    --link-color: #5ba3d9;
-    --hover-bg: #2a2a2a;
-    --footer-color: #666;
+    --bg-outer: #0d0d0d;
+    --bg-main: #1c1c1e;
+    --text-color: #d1d1d6;
+    --link-color: #6eb5ff;
+    --hover-bg: #2c2c2e;
+    --footer-color: #8e8e93;
 }
 html, body {
     margin: 0;
@@ -21,6 +21,10 @@ html, body {
 body {
     font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: var(--text-color);
+    transition: background-color 0.2s, color 0.2s;
+}
+.main, .theme-toggle, a, li, footer {
+    transition: background-color 0.2s, color 0.2s;
 }
 a {
     color: var(--link-color);
@@ -42,8 +46,13 @@ a {
 .icons {
     text-align: end;
 }
-.icons a {
+.icons a, .icons button {
     margin-right: 5px;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+.icons a:hover, .icons button:hover {
+    opacity: 1;
 }
 .photo {
     width: 300px;
@@ -92,17 +101,10 @@ footer {
     color: var(--footer-color);
 }
 .theme-toggle {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background: var(--bg-main);
-    border: 1px solid var(--text-color);
-    border-radius: 4px;
-    padding: 8px 12px;
+    background: none;
+    border: none;
     cursor: pointer;
-    color: var(--text-color);
-    font-size: 14px;
-}
-.theme-toggle:hover {
-    opacity: 0.8;
+    font-size: 16px;
+    padding: 0;
+    vertical-align: baseline;
 }
