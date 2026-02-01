@@ -1,17 +1,33 @@
+:root {
+    --bg-outer: #333;
+    --bg-main: #eee;
+    --text-color: #333;
+    --link-color: #267CB9;
+    --hover-bg: #ddd;
+    --footer-color: #aaa;
+}
+[data-theme="dark"] {
+    --bg-outer: #111;
+    --bg-main: #1a1a1a;
+    --text-color: #e0e0e0;
+    --link-color: #5ba3d9;
+    --hover-bg: #2a2a2a;
+    --footer-color: #666;
+}
 html, body {
     margin: 0;
-    background-color: #333;
+    background-color: var(--bg-outer);
 }
 body {
     font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
+    color: var(--text-color);
 }
 a {
-    color: #267CB9;
+    color: var(--link-color);
     text-decoration: none;
 }
 .main {
-    background-color: #eee;
+    background-color: var(--bg-main);
     margin-top: 40px;
     margin-bottom: 0px;
     margin-left: auto;
@@ -67,11 +83,26 @@ li {
     list-style-position: inside;
 }
 li:hover {
-    background-color: #ddd;
+    background-color: var(--hover-bg);
     border-radius: 2px;
 }
 footer {
     margin: 30px 0 30px;
     text-align: center;
-    color: #aaa;
+    color: var(--footer-color);
+}
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: var(--bg-main);
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 14px;
+}
+.theme-toggle:hover {
+    opacity: 0.8;
 }
