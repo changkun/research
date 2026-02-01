@@ -20,26 +20,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 </head>
 <body>
-<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-    <i id="theme-icon" class="fa-solid fa-moon"></i>
-</button>
 <script>
-    function getPreferredTheme() {
+    (function() {
         const saved = localStorage.getItem('theme');
-        if (saved) return saved;
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    }
-    function setTheme(theme) {
+        const theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
         document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
-        const icon = document.getElementById('theme-icon');
-        icon.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
-    }
-    function toggleTheme() {
-        const current = document.documentElement.getAttribute('data-theme') || 'light';
-        setTheme(current === 'dark' ? 'light' : 'dark');
-    }
-    setTheme(getPreferredTheme());
+    })();
 </script>
 <div class="main">
 
@@ -61,6 +47,7 @@
         <a href="https://www.zhihu.com/people/ouchangkun" alt="Zhihu"><i class="fa-brands fa-zhihu"></i></a>
         <a href="https://www.facebook.com/ouchangkun" alt="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
         <a href="https://t.me/ouchangkun" alt="Telegram"><i class="fa-brands fa-telegram"></i></a>
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"><i id="theme-icon" class="fa-solid fa-circle-half-stroke"></i></button>
     </div>
     <h1>Changkun Ou, Ph.D.</h1>
 </div>
@@ -74,5 +61,13 @@
 <footer>
 &copy; 2022 - {{.CurrentYear}} <a href="https://changkun.de">Changkun Ou</a> | Last updated: {{.BuildTime}} (<a href="https://github.com/changkun/research/commit/{{.BuildHash}}">{{.BuildHash}}</a>)
 </footer>
+<script>
+function toggleTheme() {
+    const current = document.documentElement.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+}
+</script>
 </body>
 </html>
