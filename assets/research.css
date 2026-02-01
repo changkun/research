@@ -9,10 +9,10 @@
 [data-theme="dark"] {
     --bg-outer: #0d0d0d;
     --bg-main: #1c1c1e;
-    --text-color: #d1d1d6;
-    --link-color: #6eb5ff;
+    --text-color: #98989d;
+    --link-color: #5a9fd4;
     --hover-bg: #2c2c2e;
-    --footer-color: #8e8e93;
+    --footer-color: #636366;
 }
 html, body {
     margin: 0;
@@ -104,7 +104,7 @@ footer {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: inherit;
     padding: 0;
     vertical-align: baseline;
 }
