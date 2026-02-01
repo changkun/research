@@ -10,11 +10,11 @@ all:
 	go build $(BUILD_FLAGS)
 build:
 	CGO_ENABLED=0 GOOS=linux go build $(BUILD_FLAGS)
-	docker build -t $(NAME):$(VERSION) -t $(NAME):latest .
+	docker buildx build -t $(NAME):$(VERSION) -t $(NAME):latest --load .
 up:
-	docker-compose up -d
+	docker compose up -d
 down:
-	docker-compose down
+	docker compose down
 clean: down
 	rm -rf $(NAME)
 	docker rmi -f $(shell docker images -f "dangling=true" -q) 2> /dev/null; true
