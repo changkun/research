@@ -52,6 +52,7 @@ He is enthusiastic about the open-source movement and active in the Go community
 
 ## Presentations
 
+- 🇬🇧 **Changkun Ou**. Mar 05, 2026. Human in the Agentic Loop: Designing an AI-first Software Engineering Workflow. SIXT Internal Engineering Meetup. [PDF](https://changkun.de/talk/hialeng.pdf)
 - 🇬🇧 **Changkun Ou**. Nov 30, 2023. A Glimpse to Profile-guided Optimization in Go: Early practices of bringing PGO to production. SIXT Portugal Golang Meetup. [PDF](https://changkun.de/talk/gopgo.pdf)
 - 🇬🇧 **Changkun Ou**. Jun 10, 2023. Go on GPU. GopherChina 2023. [PDF](https://changkun.de/talk/gogpu.pdf)
 - 🇬🇧 **Changkun Ou**. Apr 3, 2023. The _Intelligence_ In the Loop: Empirical Explorations and Reflections. PhD Defense. [PDF](https://changkun.de/talk/phd.pdf). [YouTube](https://youtu.be/dG8lu7uAyEY).
