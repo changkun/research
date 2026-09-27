@@ -1,21 +1,23 @@
 # Copyright 2020 Changkun Ou. All rights reserved.
 
+# changkun.de/research is a plain folder a static file server serves.
+# `make` renders index.html and the talk links into this working tree;
+# `make deploy` copies the site into the folder the server serves.
+
 NAME=research
-VERSION = $(shell git describe --always --tags)
 BUILD_TIME = $(shell date '+%Y-%m-%d')
 GIT_COMMIT=$(shell git rev-parse --short HEAD)
 BUILD_FLAGS = -ldflags "-X main.BuildTime=$(BUILD_TIME) -X main.BuildHash=$(GIT_COMMIT)"
+WWW ?= /www/changkun.de/research
 
 all:
 	go build $(BUILD_FLAGS)
-build:
-	CGO_ENABLED=0 GOOS=linux go build $(BUILD_FLAGS)
-	docker buildx build -t $(NAME):$(VERSION) -t $(NAME):latest --load .
-up:
-	docker compose up -d
-down:
-	docker compose down
-clean: down
-	rm -rf $(NAME)
-	docker rmi -f $(shell docker images -f "dangling=true" -q) 2> /dev/null; true
-	docker rmi -f $(NAME):latest $(NAME):$(VERSION) 2> /dev/null; true
+	./$(NAME)
+test:
+	go test ./...
+deploy: test all
+	mkdir -p $(WWW)
+	rsync -a --delete --exclude /assets/index.html index.html assets papers talks teach theses $(WWW)/
+clean:
+	rm -f $(NAME) index.html
+	find talks -maxdepth 1 -type l -delete
