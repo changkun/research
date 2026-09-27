@@ -96,10 +96,20 @@
         });
         // The menu marks the section being read: the last one whose heading
         // has scrolled up to the menu.
+        var menu = document.querySelector('.sections-inner');
         var links = document.querySelectorAll('.sections a');
         var headings = Array.prototype.map.call(links, function(a) {
             return document.getElementById(a.getAttribute('href').slice(1));
         });
+        // Scroll the menu, never the page, to keep the marked link in view.
+        // scrollIntoView would scroll the page too: the menu sits inside
+        // the page's scroll padding, which it treats as hidden.
+        function reveal(a) {
+            var m = menu.getBoundingClientRect(), r = a.getBoundingClientRect();
+            var fade = 48;
+            if (r.left < m.left) menu.scrollLeft -= m.left - r.left + 16;
+            else if (r.right > m.right - fade) menu.scrollLeft += r.right - (m.right - fade) + 16;
+        }
         var ticking = false, marked = -2;
         function mark() {
             ticking = false;
@@ -112,7 +122,7 @@
             links.forEach(function(a, i) {
                 if (i === current) {
                     a.setAttribute('aria-current', 'true');
-                    a.scrollIntoView({block: 'nearest', inline: 'nearest'});
+                    reveal(a);
                 } else {
                     a.removeAttribute('aria-current');
                 }
