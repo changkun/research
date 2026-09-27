@@ -2,9 +2,11 @@
 
 <!--begin-->
 
-Dr. Ou received a Ph.D. in computer science from LMU Munich on April 3rd, 2023. His research explores intelligent human-in-the-loop systems, focusing on design tradeoffs and machine learning algorithms that support user decision-making (310+ citations, h-index 9). His work spans human-AI interaction, physiologically-adaptive systems in VR/AR, and computational approaches to understanding user behavior and preferences. He bridges theory and practice, applying robust engineering to deliver systems with real-world impact. Currently, he is the Founder and CEO of [Latere AI](https://latere.ai), keeping human intelligence in the loop. Before that, he was a Staff Engineer at Sixt SE, leading AI transformation initiatives across enterprise AI platforms.
+Changkun Ou is the founder and CEO of [Latere AI](https://latere.ai), which builds AI infrastructure with human intelligence in the loop. Before that, he was a Staff Engineer at Sixt SE, leading AI transformation initiatives across enterprise AI platforms.
 
-He is enthusiastic about the open-source movement and active in the Go community. For more open-source work, see [GitHub profile](https://github.com/changkun).
+He received a Ph.D. in computer science from LMU Munich in 2023. His research explores intelligent human-in-the-loop systems, focusing on the design tradeoffs and machine learning algorithms that support human decision-making (480+ citations, h-index 10). His work spans human-AI interaction, physiologically-adaptive systems in VR/AR, computational approaches to understanding user behavior and preferences, and, most recently, trust calibration for agentic AI. He bridges theory and practice, applying robust engineering to deliver systems with real-world impact.
+
+He has been active in open source for over a decade, writing open books and Go packages and contributing to the Go project itself. See his [GitHub profile](https://github.com/changkun).
 
 ## Publications
 
