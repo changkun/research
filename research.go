@@ -17,6 +17,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 	"time"
 
@@ -53,11 +54,43 @@ func convertMD(filename string) (bytes.Buffer, error) {
 }
 
 type research struct {
-	// Navigation template.HTML
-	Content     template.HTML
+	Intro       template.HTML // the README before its first section
+	Body        template.HTML // the sections
+	Sections    []section     // one entry per section, for the page's menu
 	CurrentYear string
 	BuildTime   string
 	BuildHash   string
+}
+
+type section struct{ ID, Title string }
+
+var (
+	// A link the README closes an entry with, such as [PDF](...), becomes a
+	// labelled chip. The period that separates two of them in the README
+	// goes, since the chips separate themselves.
+	chipLink = regexp.MustCompile(`<a href="([^"]*)">(PDF|GitHub|YouTube|OSF|Website)</a>\.?`)
+
+	// The flags an entry opens with name the languages it is in.
+	leadingFlags = regexp.MustCompile(`<li>((?:(?:🇬🇧|🇨🇳|🇩🇪) ?)+)`)
+	flagName     = map[string]string{"🇬🇧": "EN", "🇨🇳": "中文", "🇩🇪": "Deutsch"}
+
+	sectionHeading = regexp.MustCompile(`<h2 id="([^"]+)">([^<]+)</h2>`)
+)
+
+// tagLanguages replaces the flags an entry opens with by a small tag
+// naming its languages. English is the page's own language, so an entry
+// only in English carries no tag.
+func tagLanguages(html string) string {
+	return leadingFlags.ReplaceAllStringFunc(html, func(m string) string {
+		var names []string
+		for _, f := range strings.Fields(strings.TrimPrefix(m, "<li>")) {
+			names = append(names, flagName[f])
+		}
+		if len(names) == 1 && names[0] == "EN" {
+			return "<li>"
+		}
+		return `<li><span class="lang">` + strings.Join(names, " · ") + `</span> `
+	})
 }
 
 func renderIndex(w io.Writer) error {
@@ -72,21 +105,23 @@ func renderIndex(w io.Writer) error {
 		return err
 	}
 
-	iconPDF := `<i class="fa-solid fa-file-pdf"></i>`
-	out := strings.Replace(content.String(), ">PDF</a>", ">"+iconPDF+"</a>", -1)
+	out := chipLink.ReplaceAllString(content.String(), `<a class="chip" href="$1">$2</a>`)
+	out = tagLanguages(out)
 
-	iconGitHub := `<i class="fa-brands fa-github"></i>`
-	out = strings.Replace(out, ">GitHub</a>", ">"+iconGitHub+"</a>", -1)
-
-	iconYouTube := `<i class="fa-brands fa-youtube"></i>`
-	out = strings.Replace(out, ">YouTube</a>", ">"+iconYouTube+"</a>", -1)
-
-	iconOSF := `<i class="ai ai-osf"></i>`
-	out = strings.Replace(out, ">OSF</a>", ">"+iconOSF+"</a>", -1)
+	intro, body := out, ""
+	if i := strings.Index(out, "<h2"); i >= 0 {
+		intro, body = out[:i], out[i:]
+	}
+	var sections []section
+	for _, m := range sectionHeading.FindAllStringSubmatch(body, -1) {
+		sections = append(sections, section{ID: m[1], Title: m[2]})
+	}
 
 	t, _ := time.Parse("2006-01-02", BuildTime)
 	return tmpl.Execute(w, research{
-		Content:     template.HTML(out),
+		Intro:       template.HTML(intro),
+		Body:        template.HTML(body),
+		Sections:    sections,
 		CurrentYear: time.Now().Format("2006"),
 		BuildTime:   t.Format("Jan 02, 2006"),
 		BuildHash:   BuildHash,

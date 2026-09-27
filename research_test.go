@@ -82,12 +82,21 @@ func TestRenderIndex(t *testing.T) {
 	if err := os.MkdirAll(filepath.Join(dir, "assets"), 0o755); err != nil {
 		t.Fatal(err)
 	}
-	if err := os.WriteFile(filepath.Join(dir, "assets", "index.html"),
-		[]byte(`<main>{{.Content}}</main><footer>{{.BuildTime}} {{.BuildHash}}</footer>`), 0o644); err != nil {
+	tmpl := `<div class="intro">{{.Intro}}</div>` +
+		`<nav>{{range .Sections}}<a href="#{{.ID}}">{{.Title}}</a>{{end}}</nav>` +
+		`<main>{{.Body}}</main><footer>{{.BuildTime}} {{.BuildHash}}</footer>`
+	if err := os.WriteFile(filepath.Join(dir, "assets", "index.html"), []byte(tmpl), 0o644); err != nil {
 		t.Fatal(err)
 	}
-	if err := os.WriteFile(filepath.Join(dir, "README.md"),
-		[]byte("# Research\n<!--begin-->\n## Papers\n\n- A paper [PDF](https://changkun.de/paper/a.pdf) [GitHub](https://github.com/changkun)\n<!--end-->\nnot rendered\n"), 0o644); err != nil {
+	readme := "# Research\n<!--begin-->\n" +
+		"Open-source work: [GitHub profile](https://github.com/changkun).\n\n" +
+		"## Publications\n\n" +
+		"- 🇬🇧 **Changkun Ou**. 2026. A paper. [doi:10.1/x](https://doi.org/10.1/x). [PDF](https://changkun.de/paper/a.pdf). [GitHub](https://github.com/changkun/a)\n" +
+		"- 🇨🇳 **Changkun Ou**. 2019. A talk. [PDF](https://changkun.de/talk/b.pdf)\n" +
+		"- 🇨🇳 🇬🇧 **Changkun Ou**. 2021. A book. [Website](https://changkun.de/modern-cpp)\n" +
+		"\n## Scientific Activities\n\n- CHI (2025)\n" +
+		"<!--end-->\n\n## License\n\nnot rendered\n"
+	if err := os.WriteFile(filepath.Join(dir, "README.md"), []byte(readme), 0o644); err != nil {
 		t.Fatal(err)
 	}
 	wd, _ := os.Getwd()
@@ -103,16 +112,25 @@ func TestRenderIndex(t *testing.T) {
 	}
 	out := b.String()
 	for _, want := range []string{
-		`<h2 id="papers">Papers</h2>`,
-		`<a href="https://changkun.de/paper/a.pdf"><i class="fa-solid fa-file-pdf"></i></a>`,
-		`<a href="https://github.com/changkun"><i class="fa-brands fa-github"></i></a>`,
+		// The intro stays before the menu; the sections follow it.
+		`<div class="intro"><p>Open-source work: <a href="https://github.com/changkun">GitHub profile</a>.</p>` + "\n" + `</div>`,
+		`<nav><a href="#publications">Publications</a><a href="#scientific-activities">Scientific Activities</a></nav>`,
+		`<main><h2 id="publications">Publications</h2>`,
+		// An entry only in English carries no tag.
+		`<li><strong>Changkun Ou</strong>. 2026. A paper.`,
+		// The links an entry closes with become chips; a DOI does not.
+		`<a href="https://doi.org/10.1/x">doi:10.1/x</a>. <a class="chip" href="https://changkun.de/paper/a.pdf">PDF</a> <a class="chip" href="https://github.com/changkun/a">GitHub</a></li>`,
+		`<li><span class="lang">中文</span> <strong>Changkun Ou</strong>. 2019. A talk.`,
+		`<li><span class="lang">中文 · EN</span> <strong>Changkun Ou</strong>. 2021. A book. <a class="chip" href="https://changkun.de/modern-cpp">Website</a></li>`,
 		`<footer>Sep 27, 2026 abc1234</footer>`,
 	} {
 		if !strings.Contains(out, want) {
 			t.Errorf("rendered page lacks %q:\n%s", want, out)
 		}
 	}
-	if strings.Contains(out, "not rendered") {
-		t.Errorf("rendered text outside the begin and end markers:\n%s", out)
+	for _, unwanted := range []string{"🇬🇧", "🇨🇳", "not rendered", "License"} {
+		if strings.Contains(out, unwanted) {
+			t.Errorf("rendered page has %q:\n%s", unwanted, out)
+		}
 	}
 }

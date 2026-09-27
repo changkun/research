@@ -1,110 +1,352 @@
+/* The latere.ai ink palette the home page uses: neutral grays with no
+ * hue, the ink itself as the accent, and latere's navy as the one color,
+ * on the eyebrow, the degree, and the links. */
 :root {
-    --bg-outer: #333;
-    --bg-main: #eee;
-    --text-color: #333;
-    --link-color: #267CB9;
-    --hover-bg: #ddd;
-    --footer-color: #aaa;
+    --bg: #ffffff;
+    --bg-raised: #f4f4f4;
+    --text: #0d0d0d;
+    --text-secondary: #525252;
+    --text-muted: #666666;
+    --navy: #38538f;
+    --border: rgba(0, 0, 0, 0.08);
+    --border-strong: rgba(0, 0, 0, 0.14);
+    --nav-bg: rgba(255, 255, 255, 0.92);
+    --serif: 'Instrument Serif', Georgia, serif;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    --measure: 760px;
+    --gutter: 24px;
 }
+
 [data-theme="dark"] {
-    --bg-outer: #0d0d0d;
-    --bg-main: #1c1c1e;
-    --text-color: #98989d;
-    --link-color: #5a9fd4;
-    --hover-bg: #2c2c2e;
-    --footer-color: #636366;
+    --bg: #161616;
+    --bg-raised: #262626;
+    --text: #ececec;
+    --text-secondary: #b4b4b4;
+    --text-muted: #9a9a9a;
+    --navy: #9bb0e4;
+    --border: rgba(255, 255, 255, 0.08);
+    --border-strong: rgba(255, 255, 255, 0.14);
+    --nav-bg: rgba(22, 22, 22, 0.92);
 }
-html, body {
-    margin: 0;
-    background-color: var(--bg-outer);
-}
+
+* { box-sizing: border-box; }
+
+html { scroll-padding-top: 64px; }
+
 body {
-    font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: var(--text-color);
-    transition: background-color 0.2s, color 0.2s;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text-secondary);
+    font: 15px/1.65 var(--sans);
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.3s, color 0.3s;
 }
-.main, .theme-toggle, a, li, footer {
-    transition: background-color 0.2s, color 0.2s;
-}
+
+::selection { background: #555; color: #fff; }
+
 a {
-    color: var(--link-color);
-    text-decoration: none;
+    color: var(--navy);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 2px;
+    transition: color 0.2s, text-decoration-color 0.2s;
 }
-.main {
-    background-color: var(--bg-main);
-    margin-top: 40px;
-    margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 20px;
+
+a:hover { text-decoration-color: currentColor; }
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--text);
+    outline-offset: 2px;
     border-radius: 4px;
-    max-width: 970px;
 }
-.icons {
-    text-align: end;
+
+.sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+
+/* ---- Header ---- */
+
+/* It scrolls away with the header, so it never sits on the menu once
+ * the menu sticks to the top. */
+.theme-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 20;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 1px solid var(--border-strong);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.2s;
 }
-.icons a, .icons button {
-    margin-right: 5px;
-    color: var(--text-color);
-    opacity: 0.7;
+
+.theme-toggle:hover { color: var(--text); background: var(--bg-raised); }
+
+.theme-toggle svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
-.icons a:hover, .icons button:hover {
-    opacity: 1;
+
+[data-theme="light"] .icon-sun,
+[data-theme="dark"] .icon-moon { display: none; }
+
+.hero,
+.intro,
+.content,
+.sections-inner,
+footer {
+    width: 100%;
+    max-width: calc(var(--measure) + 2 * var(--gutter));
+    margin: 0 auto;
+    padding: 0 var(--gutter);
 }
-.photo {
-    width: 300px;
-    float: right;
-    margin-left: 20px;
-    border-radius: 4px;
+
+/* The portrait beside the name, with the profile links under the name;
+ * on a phone the links take a line of their own below both. */
+.hero {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 28px;
+    padding-top: 72px;
+}
+
+.portrait {
+    grid-row: 1 / span 2;
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    object-fit: cover;
     user-select: none;
     -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
 }
-@media screen and (max-width: 480px) {
-    .main {
-		margin-top: 0;
-		border-radius: 0;
-        padding: 20px 10px 10px;
-    }
-    .photo {
-        float: right;
-        margin-left: 0;
-        margin-bottom: 10px;
-		width: 150px;
-    }
-	.icons {
-		text-align: right;
-	}
+
+.identity { min-width: 0; align-self: end; }
+
+.eyebrow {
+    font: 11px/1.4 var(--mono);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--navy);
 }
-ul {
+
+h1 {
+    margin: 8px 0 0;
+    font: 400 clamp(36px, 6vw, 52px)/1 var(--serif);
+    letter-spacing: -0.01em;
+    color: var(--text);
+}
+
+.degree { color: var(--navy); }
+
+.profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-self: start;
+    margin: 14px 0 0 -8px;
+}
+
+.profiles a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    color: var(--text-secondary);
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.profiles a:hover { color: var(--navy); background: var(--bg-raised); }
+
+.profiles svg { width: 18px; height: 18px; }
+
+.intro { padding-top: 28px; }
+
+.intro p {
+    margin: 0 0 14px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* ---- Section menu ---- */
+
+.sections {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin-top: 28px;
+    background: var(--nav-bg);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.sections-inner {
+    display: flex;
+    gap: 22px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    white-space: nowrap;
+}
+
+.sections-inner::-webkit-scrollbar { display: none; }
+
+.sections a {
+    padding: 13px 0 12px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.sections a:hover,
+.sections a[aria-current] { color: var(--text); border-bottom-color: var(--text); }
+
+/* ---- Sections ---- */
+
+.content { padding-bottom: 24px; }
+
+.content > h2:first-child { margin-top: 40px; }
+
+h2 {
+    margin: 56px 0 20px;
+    font: 400 32px/1.1 var(--serif);
+    color: var(--text);
+}
+
+h3 {
+    margin: 28px 0 12px;
+    font: 500 11px/1.4 var(--mono);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.content p { margin: 0 0 14px; }
+
+.content ul {
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    list-style: none;
 }
-li {
-    padding: 0 10px 5px;
-    list-style-type: square;
-    list-style-position: inside;
+
+/* A hanging indent, as a reference list sets one: the first line of an
+ * entry sits at the edge, the lines it wraps onto step in. */
+.content li {
+    margin: 0 0 14px;
+    padding-left: 1.2em;
+    text-indent: -1.2em;
+    font-size: 14.5px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
 }
-li:hover {
-    background-color: var(--hover-bg);
-    border-radius: 2px;
+
+.content li strong,
+.content li em { color: var(--text); }
+
+.content li strong { font-weight: 600; }
+
+.chip,
+.lang { text-indent: 0; }
+
+/* A link an entry closes with: PDF, GitHub, YouTube, OSF, Website. */
+.chip {
+    display: inline-flex;
+    align-items: center;
+    height: 20px;
+    margin: 0 1px;
+    padding: 0 7px;
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    font: 500 11px/1 var(--mono);
+    letter-spacing: 0.02em;
+    color: var(--text-secondary);
+    text-decoration: none;
+    vertical-align: 1px;
+    transition: color 0.2s, border-color 0.2s;
 }
+
+.chip:hover { color: var(--navy); border-color: var(--navy); }
+
+/* The languages of an entry not only in English. */
+.lang {
+    display: inline-block;
+    margin-right: 4px;
+    padding: 0 6px;
+    border-radius: 4px;
+    background: var(--bg-raised);
+    font-size: 11.5px;
+    line-height: 20px;
+    color: var(--text-secondary);
+    vertical-align: 1px;
+}
+
+/* ---- Footer ---- */
+
 footer {
-    margin: 30px 0 30px;
+    padding-top: 28px;
+    padding-bottom: 40px;
+    border-top: 1px solid var(--border);
     text-align: center;
-    color: var(--footer-color);
+    font-size: 13px;
+    color: var(--text-muted);
 }
-.theme-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: inherit;
-    padding: 0;
-    vertical-align: baseline;
+
+footer p { margin: 0 0 6px; }
+
+footer a { color: var(--text-muted); }
+
+footer a:hover { color: var(--text-secondary); }
+
+/* ---- Phones ---- */
+
+@media (max-width: 600px) {
+    :root { --gutter: 16px; }
+    .hero { column-gap: 16px; padding-top: 64px; }
+    .portrait { grid-row: 1; width: 80px; height: 80px; }
+    h1 { font-size: 34px; }
+    .profiles { grid-column: 1 / -1; gap: 0; margin-top: 12px; }
+    /* The menu scrolls sideways; its edge fades to say so. */
+    .sections-inner {
+        padding-right: 48px;
+        -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 48px), transparent);
+        mask-image: linear-gradient(90deg, #000 calc(100% - 48px), transparent);
+    }
+    .intro p { font-size: 15px; }
+    h2 { margin-top: 44px; font-size: 28px; }
+}
+
+/* ---- Print ---- */
+
+@media print {
+    :root {
+        --bg: #fff;
+        --text: #000;
+        --text-secondary: #222;
+        --text-muted: #444;
+        --navy: #000;
+    }
+    body { font-size: 10.5pt; }
+    .theme-toggle, .sections, .profiles, .urlstat { display: none; }
+    .hero { padding-top: 0; }
+    .portrait { width: 72px; height: 72px; }
+    h2 { break-after: avoid; }
+    .content li { break-inside: avoid; }
+    .chip { border-color: #999; }
 }

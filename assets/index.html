@@ -8,66 +8,127 @@
       gtag('js', new Date());
       gtag('config', 'UA-80889616-2');
     </script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="msapplication-TileColor" content="#F7BA2F">
-    <meta name="theme-color" content="#F7BA2F">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Publications, talks, teaching and service of Changkun Ou.">
+    <meta name="color-scheme" content="light dark">
+    <title>Research · Changkun Ou</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://changkun.de/logo.png">
-    <title>Research | Changkun Ou</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+    <script>
+        // Before the stylesheet, so a dark page never paints light first.
+        // The key is the home page's, so both keep one choice.
+        (function() {
+            var saved = null;
+            try { saved = localStorage.getItem('theme'); } catch (e) {}
+            var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/research/assets/research.css">
-    <script src="https://kit.fontawesome.com/faa8791281.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 </head>
 <body>
-<script>
-    (function() {
-        const saved = localStorage.getItem('theme');
-        const theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        document.documentElement.setAttribute('data-theme', theme);
-    })();
-</script>
-<div class="main">
+<svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-home" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></g></symbol>
+    <symbol id="i-email" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></g></symbol>
+    <symbol id="i-scholar" viewBox="0 0 24 24"><path fill="currentColor" d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></symbol>
+    <symbol id="i-orcid" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/></symbol>
+    <symbol id="i-osf" viewBox="0 0 24 24"><path fill="currentColor" d="M12.088 0a2.984 2.984 0 0 0-2.986 2.984 2.984 2.984 0 0 0 .525 1.68 2.654 2.654 0 0 1 2.482-1.734c1.121 0 2.083.706 2.467 1.695a2.984 2.984 0 0 0 .496-1.64A2.984 2.984 0 0 0 12.088 0zM5.65 2.666A2.984 2.984 0 0 0 2.666 5.65 2.984 2.984 0 0 0 5.65 8.635 2.984 2.984 0 0 0 8.635 5.65 2.984 2.984 0 0 0 5.65 2.666zm12.7 0a2.984 2.984 0 0 0-2.985 2.984 2.984 2.984 0 0 0 2.985 2.985 2.984 2.984 0 0 0 2.986-2.985 2.984 2.984 0 0 0-2.986-2.984zm-6.24.764a2.147 2.147 0 0 0-2.147 2.146 2.147 2.147 0 0 0 2.146 2.147 2.147 2.147 0 0 0 2.147-2.147 2.147 2.147 0 0 0-2.147-2.146zM9.112 6.04a3.497 3.497 0 0 1-2.984 3.06 2.147 2.147 0 0 0 1.363.493A2.147 2.147 0 0 0 9.64 7.447a2.147 2.147 0 0 0-.526-1.406zm5.782.047a2.147 2.147 0 0 0-.489 1.36 2.147 2.147 0 0 0 2.147 2.146 2.147 2.147 0 0 0 1.355-.489 3.494 3.494 0 0 1-3.013-3.017zM2.985 9.016A2.984 2.984 0 0 0 0 12a2.984 2.984 0 0 0 2.984 2.984 2.984 2.984 0 0 0 1.659-.505A2.655 2.655 0 0 1 2.922 12c0-1.131.719-2.102 1.723-2.479a2.984 2.984 0 0 0-1.66-.505zm18.03 0a2.984 2.984 0 0 0-1.673.52 2.655 2.655 0 0 1 1.71 2.474c0 1.12-.705 2.082-1.695 2.467a2.984 2.984 0 0 0 1.659.507A2.984 2.984 0 0 0 24 12a2.984 2.984 0 0 0-2.984-2.984zm-15.447.838A2.147 2.147 0 0 0 3.422 12a2.147 2.147 0 0 0 2.146 2.146A2.147 2.147 0 0 0 7.715 12a2.147 2.147 0 0 0-2.147-2.146zm12.838.01a2.147 2.147 0 0 0-2.146 2.146 2.147 2.147 0 0 0 2.146 2.146 2.147 2.147 0 0 0 2.147-2.146 2.147 2.147 0 0 0-2.147-2.147zM7.492 14.376a2.147 2.147 0 0 0-1.398.518 3.496 3.496 0 0 1 3.015 3.037 2.147 2.147 0 0 0 .53-1.409 2.147 2.147 0 0 0-2.147-2.146zm9.06 0a2.147 2.147 0 0 0-2.146 2.146 2.147 2.147 0 0 0 .492 1.362 3.495 3.495 0 0 1 3.047-2.996 2.147 2.147 0 0 0-1.392-.512zm-10.902.988a2.984 2.984 0 0 0-2.984 2.985 2.984 2.984 0 0 0 2.984 2.986 2.984 2.984 0 0 0 2.985-2.986 2.984 2.984 0 0 0-2.985-2.985zm12.7 0a2.984 2.984 0 0 0-2.985 2.985 2.984 2.984 0 0 0 2.985 2.986 2.984 2.984 0 0 0 2.986-2.986 2.984 2.984 0 0 0-2.986-2.985zm-6.35.908a2.147 2.147 0 0 0-2.146 2.147A2.147 2.147 0 0 0 12 20.566a2.147 2.147 0 0 0 2.146-2.146A2.147 2.147 0 0 0 12 16.273zm2.268 3.504A2.65 2.65 0 0 1 12 21.067a2.65 2.65 0 0 1-2.188-1.16 2.734 2.635 0 0 0-.46 1.458A2.734 2.635 0 0 0 12.086 24a2.734 2.635 0 0 0 2.734-2.635 2.734 2.635 0 0 0-.552-1.588z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></symbol>
+</svg>
 
-<img class="photo" src="/research/assets/changkun_ou3.png" alt="photo">
-<div id="profile">
-    <div class="icons">
-        <a href="https://changkun.de" alt="Homepage"><i class="fa-solid fa-house-user"></i></a>
-        <a href="https://github.com/changkun" alt="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="mailto:contact[at]changkun.de" alt="E-Mail"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://www.medien.ifi.lmu.de/team/changkun.ou/" alt="Institution"><i class="fa-solid fa-building-columns"></i></a>
-        <a href="https://scholar.google.de/citations?user=3qjB-eUAAAAJ"><i class="ai ai-google-scholar-square"></i></a>
-        <a href="https://osf.io/wyekm"><i class="ai ai-osf"></i></a>
-        <a href="https://www.linkedin.com/in/changkun/" alt="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://twitter.com/ouchangkun" alt="Twitter"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.instagram.com/ouchangkun" alt="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="https://orcid.org/0000-0002-4595-7485" alt="ORCID"><i class="fa-brands fa-orcid"></i></a>
-        <a href="https://www.youtube.com/channel/UCtujb7c9eudbVEkAsIRZR3w" alt="YouTube"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://stackoverflow.com/users/3819460/changkun" alt="StackOverflow"><i class="fa-brands fa-stack-overflow"></i></a>
-        <a href="https://www.zhihu.com/people/ouchangkun" alt="Zhihu"><i class="fa-brands fa-zhihu"></i></a>
-        <a href="https://www.facebook.com/ouchangkun" alt="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="https://t.me/ouchangkun" alt="Telegram"><i class="fa-brands fa-telegram"></i></a>
-        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"><i id="theme-icon" class="fa-solid fa-circle-half-stroke"></i></button>
+<button class="theme-toggle" type="button" aria-label="Toggle theme">
+    <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+</button>
+
+<header class="hero">
+    <img class="portrait" src="/research/assets/changkun_ou3.png" alt="Changkun Ou" width="120" height="120">
+    <div class="identity">
+        <div class="eyebrow">Research</div>
+        <h1>Changkun Ou<span class="degree">, Ph.D.</span></h1>
     </div>
-    <h1>Changkun Ou, Ph.D.</h1>
+    <nav class="profiles" aria-label="Profiles">
+        <a href="https://changkun.de" title="Home" aria-label="Home"><svg aria-hidden="true"><use href="#i-home"/></svg></a>
+        <a href="https://changkun.de/s/email" title="Email" aria-label="Email"><svg aria-hidden="true"><use href="#i-email"/></svg></a>
+        <a href="https://scholar.google.de/citations?user=3qjB-eUAAAAJ" title="Google Scholar" aria-label="Google Scholar"><svg aria-hidden="true"><use href="#i-scholar"/></svg></a>
+        <a href="https://orcid.org/0000-0002-4595-7485" title="ORCID" aria-label="ORCID"><svg aria-hidden="true"><use href="#i-orcid"/></svg></a>
+        <a href="https://osf.io/wyekm" title="OSF" aria-label="OSF"><svg aria-hidden="true"><use href="#i-osf"/></svg></a>
+        <a href="https://github.com/changkun" title="GitHub" aria-label="GitHub"><svg aria-hidden="true"><use href="#i-github"/></svg></a>
+        <a href="https://www.linkedin.com/in/changkun/" title="LinkedIn" aria-label="LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+        <a href="https://x.com/changkun" title="X" aria-label="X"><svg aria-hidden="true"><use href="#i-x"/></svg></a>
+        <a href="https://www.youtube.com/channel/UCtujb7c9eudbVEkAsIRZR3w" title="YouTube" aria-label="YouTube"><svg aria-hidden="true"><use href="#i-youtube"/></svg></a>
+    </nav>
+</header>
+
+<div class="intro">
+{{.Intro}}
 </div>
 
-{{.Content}}
+<nav class="sections" aria-label="Sections">
+    <div class="sections-inner">
+        {{range .Sections}}<a href="#{{.ID}}">{{.Title}}</a>
+        {{end}}
+    </div>
+</nav>
 
-<p class="urlstat">This page has <span id="urlstat-page-uv"></span> visitors and had been viewed for <span id="urlstat-page-pv"></span> times.</p>
-<script async="async" src="//changkun.de/urlstat/client.js"></script>
-</div>
+<main class="content">
+{{.Body}}
+</main>
 
 <footer>
-&copy; 2022 - {{.CurrentYear}} <a href="https://changkun.de">Changkun Ou</a> | Last updated: {{.BuildTime}} (<a href="https://github.com/changkun/research/commit/{{.BuildHash}}">{{.BuildHash}}</a>)
+    <p class="urlstat">Viewed <span id="urlstat-page-pv"></span> times by <span id="urlstat-page-uv"></span> visitors.</p>
+    <p>&copy; 2022&ndash;{{.CurrentYear}} <a href="https://changkun.de">Changkun Ou</a> · Last updated {{.BuildTime}} (<a href="https://github.com/changkun/research/commit/{{.BuildHash}}">{{.BuildHash}}</a>)</p>
 </footer>
+<script async="async" src="//changkun.de/urlstat/client.js"></script>
 <script>
-function toggleTheme() {
-    const current = document.documentElement.getAttribute('data-theme');
-    const next = current === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
-}
+    (function() {
+        var toggle = document.querySelector('.theme-toggle');
+        toggle.addEventListener('click', function() {
+            var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            try { localStorage.setItem('theme', next); } catch (e) {}
+        });
+        // The menu marks the section being read: the last one whose heading
+        // has scrolled up to the menu.
+        var links = document.querySelectorAll('.sections a');
+        var headings = Array.prototype.map.call(links, function(a) {
+            return document.getElementById(a.getAttribute('href').slice(1));
+        });
+        var ticking = false, marked = -2;
+        function mark() {
+            ticking = false;
+            var current = -1;
+            headings.forEach(function(h, i) {
+                if (h && h.getBoundingClientRect().top <= 72) current = i;
+            });
+            if (current === marked) return;
+            marked = current;
+            links.forEach(function(a, i) {
+                if (i === current) {
+                    a.setAttribute('aria-current', 'true');
+                    a.scrollIntoView({block: 'nearest', inline: 'nearest'});
+                } else {
+                    a.removeAttribute('aria-current');
+                }
+            });
+        }
+        window.addEventListener('scroll', function() {
+            if (!ticking) { ticking = true; requestAnimationFrame(mark); }
+        }, {passive: true});
+        mark();
+
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+            var saved = null;
+            try { saved = localStorage.getItem('theme'); } catch (err) {}
+            if (!saved) document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+        });
+    })();
 </script>
 </body>
 </html>
