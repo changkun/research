@@ -21,6 +21,7 @@
             var saved = null;
             try { saved = localStorage.getItem('theme'); } catch (e) {}
             var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (saved !== 'light' && saved !== 'dark') saved = null; // the blog once stored 'auto'
             document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
         })();
     </script>
@@ -136,7 +137,7 @@
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
             var saved = null;
             try { saved = localStorage.getItem('theme'); } catch (err) {}
-            if (!saved) document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+            if (saved !== 'light' && saved !== 'dark') document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
         });
     })();
 </script>
