@@ -2,7 +2,7 @@
 
 <!--begin-->
 
-Changkun Ou is the founder of [Latere AI](https://latere.ai), which builds AI infrastructure with human intelligence in the loop. Before that, he was a Staff Engineer at Sixt SE, leading AI transformation initiatives across enterprise AI platforms.
+Changkun Ou is the founder of [Latere AI](https://latere.ai), which builds AI infrastructure with human intelligence in the loop. Previously, he was a Staff Engineer at Sixt SE, leading AI transformation initiatives across enterprise AI platforms.
 
 He received a Ph.D. in computer science from LMU Munich in 2023. His research explores intelligent human-in-the-loop systems, focusing on the design tradeoffs and machine learning algorithms that support human decision-making (480+ citations, h-index 10). His work spans human-AI interaction, physiologically-adaptive systems in VR/AR, computational approaches to understanding user behavior and preferences, and, most recently, trust calibration for agentic AI. He bridges theory and practice, applying robust engineering to deliver systems with real-world impact.
 
