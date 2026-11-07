@@ -34,7 +34,6 @@ var (
 		goldmark.WithParserOptions(
 			parser.WithAutoHeadingID(),
 		),
-		goldmark.WithRendererOptions(),
 	)
 )
 
