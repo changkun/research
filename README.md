@@ -139,6 +139,19 @@ He has been active in open source for over a decade, writing open books and Go p
 
 <!--end-->
 
+## Publishing
+
+[changkun.de/research](https://changkun.de/research) serves a checkout of
+this repository. The website renders the page from this README, between the
+`begin` and `end` markers, and serves every other file as it is. Its template
+and stylesheet are in
+[changkun/website](https://github.com/changkun/website/tree/main/internal/research).
+A talk at `talks/<yyyymm>/<name>.pdf` is also at
+`changkun.de/talk/<name>.pdf`, so a talk's name must be unique.
+
+To publish, push, then pull in the checkout at `/www/changkun.de/research` on
+the server. No build and no restart.
+
 ## License
 
 Unauthorized using, copying, modifying and distributing, via any medium is strictly prohibited.
